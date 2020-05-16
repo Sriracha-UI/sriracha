@@ -1,0 +1,28 @@
+{
+  "name": "sriracha",
+  "version": "0.0.1",
+  "description": "A react style library build with styled-components, typescript, and material ui theme.",
+  "main": "dist/bundle.js",
+  "repository": "git@github.com:Sriracha-UI/sriracha.git",
+  "author": "JimmyMcBride <mcbride967@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^7.0.4",
+    "typescript": "^3.9.2"
+  },
+  "dependencies": {
+    "@callstack/react-theme-provider": "^2.1.0",
+    "styled-components": "^5.1.0",
+    "styled-map": "^3.3.0"
+  }
+}
