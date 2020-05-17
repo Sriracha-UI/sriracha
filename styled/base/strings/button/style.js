@@ -7,13 +7,14 @@ import {
   buttonCursorStyle,
   boxShadow,
   activeBackground,
+  buttonRadius,
 } from "../../../maps";
 
 export default css`
   color: ${(props) => (props.color ? props.color : buttonColor)};
   background: ${(props) => (props.bg ? props.bg : buttonBackground)};
   border: ${(props) => (props.border ? props.border : "none")};
-  border-radius: ${(props) => (props.radius ? props.radius : "0.1rem")};
+  border-radius: ${(props) => (props.radius ? props.radius : buttonRadius)};
   opacity: ${(props) => (props.opacity ? props.opacity : "none")};
   box-shadow: ${(props) => (props.shadow ? props.shadow : boxShadow)};
 
