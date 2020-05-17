@@ -6,5 +6,6 @@ export default styledMap`
   mp: 3rem;
   lp: 4rem;
   xlp: 5rem;
+  xxlp: 6rem;
   default: 0.8rem;
 `;
