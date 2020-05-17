@@ -23,6 +23,8 @@ export { default as buttonHoverBackground } from "./styles/button/hoverBackgroun
 export { default as buttonCursorStyle } from "./styles/button/cursorStyle";
 export { default as btnMarg } from "./styles/button/margin";
 export { default as btnPad } from "./styles/button/padding";
+export { default as cardMarg } from "./styles/card/margin";
+export { default as cardPad } from "./styles/card/padding";
 export { default as textAlign } from "./styles/textAlign";
 export { default as textCenter } from "./styles/textCenter";
 export { default as bgSize } from "./styles/bgSize";

@@ -17,6 +17,6 @@ export { default as heroBackgroundBase } from "./strings/hero/background";
 export { default as inputStyleBase } from "./strings/input/style";
 export { default as inputSizeBase } from "./strings/input/size";
 export { default as positionBase } from "./strings/basic/position";
-export { default as wrapperSizeBase } from "./strings/wrapperSize";
+export { default as wrapperSizeBase } from "./strings/wrapper/size";
 export { default as toolTipBase } from "./strings/unique/toolTip";
 export { default as appWrapperBase } from "./strings/unique/appWrapper";
