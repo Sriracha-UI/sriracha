@@ -1,19 +1,17 @@
+// eslint-disable-next-line
 const path = require("path");
 
+// eslint-disable-next-line
 module.exports = {
-  entry: "./src/index.ts",
+  mode: "production",
+  entry: "./index.js",
+  output: {
+    path: path.resolve("dist"),
+    filename: "index.js",
+    libraryTarget: "commonjs2",
+  },
   module: {
     rules: [
-      {
-        test: /\.tsx?$/,
-        loader: "ts-loader",
-        exclude: /node_modules/,
-      },
-      {
-        test: /\.ts?$/,
-        loader: "ts-loader",
-        exclude: /node_modules/,
-      },
       {
         test: /\.css$/,
         use: [{ loader: "style-loader" }, { loader: "css-loader" }],
@@ -33,13 +31,6 @@ module.exports = {
       },
     ],
   },
-  resolve: {
-    extensions: [".tsx", ".ts", ".js"],
-  },
-  output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "dist"),
-  },
   externals: {
     react: {
       commonjs: "react",
@@ -52,6 +43,11 @@ module.exports = {
       commonjs2: "react-dom",
       amd: "ReactDOM",
       root: "ReactDOM",
+    },
+  },
+  resolve: {
+    alias: {
+      "react-router-dom": path.resolve("./node_modules/react-router-dom"),
     },
   },
 };
