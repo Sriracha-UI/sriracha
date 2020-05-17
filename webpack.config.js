@@ -1,16 +1,18 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-  entry: './src/index.ts',
+  entry: "./src/index.ts",
   module: {
     rules: [
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        loader: "ts-loader",
         exclude: /node_modules/,
-        query: {
-          presets: ["@babel/preset-react"],
-        },
+      },
+      {
+        test: /\.ts?$/,
+        loader: "ts-loader",
+        exclude: /node_modules/,
       },
       {
         test: /\.css$/,
@@ -32,11 +34,11 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [ '.tsx', '.ts', '.js' ],
+    extensions: [".tsx", ".ts", ".js"],
   },
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist"),
   },
   externals: {
     react: {
