@@ -23,6 +23,7 @@ export default css`
     color: ${(props) => (props.hvrColor ? props.hvrColor : buttonHoverColor)};
     background: ${(props) =>
       props.hvrBg ? props.hvrBg : buttonHoverBackground};
+    box-shadow: ${(props) => (props.hvrShadow ? props.hvrShadow : "inherit")};
     cursor: ${buttonCursorStyle};
   }
 
