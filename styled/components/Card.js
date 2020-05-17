@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import {
   flexColumnBase,
-  sizeBase,
+  cardSizeBase,
   cardStyleBase,
   centerFontBase,
 } from "../base";
 
 const Card = styled.div`
   ${flexColumnBase}
-  ${sizeBase}
+  ${cardSizeBase}
   ${cardStyleBase}
   ${centerFontBase}
 `;

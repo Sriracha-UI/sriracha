@@ -9,6 +9,7 @@ export { default as centerFontBase } from "./strings/centerFont";
 export { default as buttonSizeBase } from "./strings/buttonSize";
 export { default as buttonStyleBase } from "./strings/buttonStyle";
 export { default as cardStyleBase } from "./strings/cardStyle";
+export { default as cardSizeBase } from "./strings/cardSize";
 export { default as shapeBase } from "./strings/shape";
 export { default as heroStyleBase } from "./strings/heroStyle";
 export { default as heroBackgroundBase } from "./strings/heroBackground";
