@@ -16,7 +16,7 @@ export default css`
       props.hvrBorder ? props.hvrBorder : `0.2rem solid ${theme.colors.blue1}`};
     color: ${(props) => (props.hvrColor ? props.hvrColor : "auto")};
     background: ${(props) => (props.hvrBg ? props.hvrBg : "auto")};
-    box-shadow: ${(props) => (props.hvrShadow ? props.hvrShadow : "inherit")};
+    box-shadow: ${(props) => (props.hvrShadow ? props.hvrShadow : "auto")};
     cursor: ${cursorStyle};
   }
 `;

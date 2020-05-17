@@ -13,7 +13,7 @@ export default css`
     border: ${(props) => (props.hvrBorder ? props.hvrBorder : "none")};
     color: ${(props) => (props.hvrColor ? props.hvrColor : "auto")};
     background: ${(props) => (props.hvrBg ? props.hvrBg : "auto")};
-    box-shadow: ${(props) => (props.hvrShadow ? props.hvrShadow : "inherit")};
+    box-shadow: ${(props) => (props.hvrShadow ? props.hvrShadow : "auto")};
     cursor: ${cursorStyle};
   }
 `;
