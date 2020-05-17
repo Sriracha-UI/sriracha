@@ -1,6 +1,6 @@
 import { css } from "styled-components";
-import { theme } from "../../theme";
-import { marg, pad } from "../../maps";
+import { theme } from "../../../theme";
+import { marg, pad } from "../../../maps";
 
 export default css`
   background: ${(props) => (props.bg ? props.bg : theme.colors.gray2)};

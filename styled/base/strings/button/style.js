@@ -7,7 +7,7 @@ import {
   buttonCursorStyle,
   boxShadow,
   activeBackground,
-} from "../../maps";
+} from "../../../maps";
 
 export default css`
   color: ${(props) => (props.color ? props.color : buttonColor)};

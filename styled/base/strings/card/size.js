@@ -1,5 +1,5 @@
 import { css } from "styled-components";
-import { sideways, boxSize, marg, pad } from "../../maps";
+import { sideways, boxSize, btnMarg, btnPad } from "../../../maps";
 
 export default css`
   height: ${(props) => (props.h ? props.h : props.sqr ? props.sqr : "auto")};
@@ -8,7 +8,7 @@ export default css`
   max-width: ${(props) => (props.maxW ? props.maxW : "none")};
   min-width: ${(props) => (props.minW ? props.minW : "none")};
   max-height: ${(props) => (props.maxH ? props.maxH : "none")};
-  margin: ${(props) => (props.m ? props.m : marg)};
-  padding: ${(props) => (props.p ? props.p : pad)};
+  margin: ${(props) => (props.m ? props.m : btnMarg)};
+  padding: ${(props) => (props.p ? props.p : btnPad)};
   box-sizing: ${(props) => (props.boxSize ? props.boxSize : boxSize)};
 `;

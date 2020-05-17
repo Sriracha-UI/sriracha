@@ -1,5 +1,5 @@
 import { css } from "styled-components";
-import { bgCover, bgFixed } from "../../maps";
+import { bgCover, bgFixed } from "../../../maps";
 
 export default css`
   background-image: ${(props) =>
