@@ -25,5 +25,5 @@ export default styledMap`
   success: ${theme.palette.successDark};
   warning: ${theme.palette.warningDark};
   info: ${theme.palette.infoDark};
-  default: ${theme.colors.gray8};
+  default: ${theme.colors.gray7};
 `;
