@@ -2,25 +2,21 @@ import React from "react";
 import styled from "styled-components";
 import { Flex, theme } from "../../../index";
 
-const Cabinet = ({ active, toggle, children, ...rest }) =>
-  active
-    ? ReactDOM.createPortal(
-        <CabinetWrapper>
-          <div
-            className={`overlay-${active ? "active" : "in-active"}`}
-            onClick={toggle}
-          />
-          <InnerFlex
-            {...rest}
-            className={`cabinet ${active ? "active" : "in-active"}`}
-            drape
-          >
-            {children}
-          </InnerFlex>
-        </CabinetWrapper>,
-        document.body
-      )
-    : null;
+const Cabinet = ({ active, toggle, children }) => (
+  <CabinetWrapper>
+    <div
+      className={`overlay-${active ? "active" : "in-active"}`}
+      onClick={toggle}
+    />
+    <InnerFlex
+      // {...rest}
+      className={`cabinet ${active ? "active" : "in-active"}`}
+      drape
+    >
+      {children}
+    </InnerFlex>
+  </CabinetWrapper>
+);
 
 const CabinetWrapper = styled.div`
   text-align: center;
