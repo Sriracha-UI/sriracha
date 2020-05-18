@@ -11,7 +11,8 @@ export default css`
   opacity: ${(props) => (props.opacity ? props.opacity : "none")};
   box-shadow: ${(props) => (props.shadow ? props.shadow : boxShadow)};
 
-  transition: border 1s, color 1s, background 1s, background 1s, box-shadow 1s;
+  transition: border 0.6s, color 0.6s, background 0.6s, background 0.6s,
+    box-shadow 0.6s;
 
   &:hover {
     border: ${(props) =>
