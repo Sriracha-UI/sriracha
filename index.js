@@ -12,7 +12,7 @@ import { useCabinet } from "./jsx/hooks/useCabinet";
 // jsx components
 import NavLink from "./jsx/components/NavLink";
 import Modal from "./jsx/components/Modal";
-// import Cabinet from "./jsx/components/Cabinet";
+import Cabinet from "./jsx/components/Cabinet";
 
 // exports
 export {
@@ -23,7 +23,7 @@ export {
   useCabinet,
   useTheme,
   Modal,
-  // Cabinet,
+  Cabinet,
 };
 
 // export style components
