@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 export const useModal = () => {
-  const [isShowing, setIsShowing] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
-  function toggle() {
-    setIsShowing(!isShowing);
+  function toggleModal() {
+    setIsActive(!isActive);
   }
 
-  return [isShowing, toggle];
+  return [isActive, toggleModal];
 };
