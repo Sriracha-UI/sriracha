@@ -2,19 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import { Flex, theme } from "../../../index";
 
-const Cabinet = ({ active, toggle, children }) => (
+const Cabinet = ({ active, toggle, children, ...rest }) => (
   <CabinetWrapper>
     <div
       className={`overlay-${active ? "active" : "in-active"}`}
       onClick={toggle}
     />
-    <Flex
-      // {...rest}
-      className={`cabinet ${active ? "active" : "in-active"}`}
-      drape
-    >
+    <Card {...rest} className={`cabinet ${active ? "active" : "in-active"}`}>
       {children}
-    </Flex>
+    </Card>
   </CabinetWrapper>
 );
 
