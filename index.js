@@ -7,13 +7,24 @@ export { theme } from "./styled/theme";
 
 // export hooks
 import { useModal } from "./jsx/hooks/useModal";
+import { useCabinet } from "./jsx/hooks/useCabinet";
 
 // jsx components
 import NavLink from "./jsx/components/NavLink";
 import Modal from "./jsx/components/Modal";
+import Cabinet from "./jsx/components/Cabinet";
 
 // exports
-export { ThemeWrapper, withTheme, NavLink, useModal, useTheme, Modal };
+export {
+  ThemeWrapper,
+  withTheme,
+  NavLink,
+  useModal,
+  useCabinet,
+  useTheme,
+  Modal,
+  Cabinet,
+};
 
 // export style components
 export { default as AppWrapper } from "./styled/components/AppWrapper";

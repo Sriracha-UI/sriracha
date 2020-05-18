@@ -1,57 +1,72 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import styled from "styled-components";
-import { Card, Box, theme } from "../../../index";
+import { Flex, theme } from "sriracha-ui";
 
-const Modal = ({ isOpen, toggle, children }) =>
-  isOpen
-    ? ReactDOM.createPortal(
-        <ModalWrapper>
-          <Box className="container" aria-modal aria-hidden role="dialog">
-            <div className="overlay" onClick={toggle} />
-            <Card className="modal">{children}</Card>
-          </Box>
-        </ModalWrapper>,
-        document.body
-      )
-    : null;
+const Cabinet = ({ active, toggle, children, ...rest }) => (
+  <CabinetWrapper>
+    <div
+      className={`overlay-${active ? "active" : "in-active"}`}
+      onClick={toggle}
+    />
+    <InnerFlex
+      {...rest}
+      className={`cabinet ${active ? "active" : "in-active"}`}
+      drape
+    >
+      {children}
+    </InnerFlex>
+  </CabinetWrapper>
+);
 
-const ModalWrapper = styled.div`
+const CabinetWrapper = styled.div`
   text-align: center;
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1040;
-    width: 100%;
-    height: 100%;
-    background-color: ${theme.colors.blackAlpha8};
+
+  .in-active {
+    left: -30rem;
   }
 
-  .container {
+  .active {
+    left: 0rem;
+  }
+
+  .overlay-in-active {
+    display: none;
+  }
+
+  .overlay-active {
+    z-index: 1000;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+
+  .in-active .cabinet {
+    display: none;
+  }
+
+  .cabinet {
+    z-index: 2000;
+    position: absolute;
+    height: 100vh;
+    width: 30rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1050;
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    outline: 0;
+    align-items: center;
+    transition: 1s;
   }
 
-  .modal {
-    z-index: 2000;
-    background: white;
-    position: relative;
-    margin: 1.75rem auto;
-    border-radius: 3px;
-    max-width: 500px;
-    padding: 2rem;
+  @media only screen and (max-width: 600px) {
+    .cabinet {
+      width: 50vw;
+    }
   }
 `;
 
-export default Modal;
+const InnerFlex = styled(Flex)`
+  background: ${(props) => (props.bg ? props.bg : theme.colors.gray0)};
+`;
+
+export default Cabinet;
