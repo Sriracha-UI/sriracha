@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Flex, theme } from "sriracha-ui";
+import { Flex, theme } from "../../../index";
 
 const Cabinet = ({ active, toggle, children, ...rest }) => (
   <CabinetWrapper>
