@@ -19,7 +19,7 @@ export default styledMap`
   deepPurple: ${theme.colors.deepPurple6};
   purple: ${theme.colors.purple6};
   pink: ${theme.colors.pink6};
-  invert: ${theme.colors.gray4};
+  invert: ${theme.colors.gray5};
   primary: ${theme.palette.primary};
   secondary: ${theme.palette.secondary};
   success: ${theme.palette.success};
