@@ -8,11 +8,7 @@ const Cabinet = ({ active, toggle, children, ...rest }) => (
       className={`overlay-${active ? "active" : "in-active"}`}
       onClick={toggle}
     />
-    <Card
-      {...rest}
-      m="0"
-      className={`cabinet ${active ? "active" : "in-active"}`}
-    >
+    <Card {...rest} className={`cabinet ${active ? "active" : "in-active"}`}>
       {children}
     </Card>
   </CabinetWrapper>
@@ -55,7 +51,8 @@ const CabinetWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: ${theme.colors.gray0};
+    // background: ${theme.colors.gray0};
+    margin: 0;
     transition: 1s;
   }
 
