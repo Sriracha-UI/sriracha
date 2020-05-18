@@ -3,12 +3,12 @@ import ReactDOM from "react-dom";
 import styled from "styled-components";
 import { Card, Box, theme } from "../../../index";
 
-const Modal = ({ isActive, toggleModal, children }) =>
-  isActive
+const Modal = ({ active, toggle, children }) =>
+  active
     ? ReactDOM.createPortal(
         <ModalWrapper>
           <Box className="container" aria-modal aria-hidden role="dialog">
-            <div className="overlay" onClick={toggleModal} />
+            <div className="overlay" onClick={toggle} />
             <Card className="modal">{children}</Card>
           </Box>
         </ModalWrapper>,
