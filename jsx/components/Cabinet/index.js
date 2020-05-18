@@ -8,13 +8,13 @@ const Cabinet = ({ active, toggle, children }) => (
       className={`overlay-${active ? "active" : "in-active"}`}
       onClick={toggle}
     />
-    <InnerFlex
+    <Flex
       // {...rest}
       className={`cabinet ${active ? "active" : "in-active"}`}
       drape
     >
       {children}
-    </InnerFlex>
+    </Flex>
   </CabinetWrapper>
 );
 
@@ -55,6 +55,7 @@ const CabinetWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: ${theme.colors.gray0};
     transition: 1s;
   }
 
@@ -65,8 +66,8 @@ const CabinetWrapper = styled.div`
   }
 `;
 
-const InnerFlex = styled(Flex)`
-  background: ${(props) => (props.bg ? props.bg : theme.colors.gray0)};
-`;
+// const InnerFlex = styled(Flex)`
+//   background: ${(props) => (props.bg ? props.bg : theme.colors.gray0)};
+// `;
 
 export default Cabinet;
