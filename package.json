@@ -1,6 +1,6 @@
 {
   "name": "sriracha-ui",
-  "version": "0.2.9",
+  "version": "0.3.0",
   "description": "A react style library build with styled-components, and material ui theme.",
   "main": "dist/index",
   "scripts": {
