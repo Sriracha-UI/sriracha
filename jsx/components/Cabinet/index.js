@@ -51,9 +51,8 @@ const CabinetWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    // background: ${theme.colors.gray0};
     margin: 0;
-    transition: 1s;
+    transition: width 1s;
   }
 
   @media only screen and (max-width: 600px) {
@@ -62,9 +61,5 @@ const CabinetWrapper = styled.div`
     }
   }
 `;
-
-// const InnerFlex = styled(Flex)`
-//   background: ${(props) => (props.bg ? props.bg : theme.colors.gray0)};
-// `;
 
 export default Cabinet;
