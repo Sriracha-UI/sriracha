@@ -52,7 +52,7 @@ const CabinetWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     margin: 0;
-    transition: width 1s;
+    transition: left 1s;
   }
 
   @media only screen and (max-width: 600px) {
