@@ -4,6 +4,7 @@ import {
   boxShadow,
   cardColor,
   cardBackground,
+  centerAlign,
 } from "../../../maps";
 
 export default css`
@@ -13,6 +14,7 @@ export default css`
   border-radius: ${(props) => (props.radius ? props.radius : "0.1rem")};
   opacity: ${(props) => (props.opacity ? props.opacity : "none")};
   box-shadow: ${(props) => (props.shadow ? props.shadow : boxShadow)};
+  text-align: ${centerAlign};
 
   transition: border 0.5s, color 0.5s, background 0.5s, background 0.5s,
     box-shadow 0.5s;
