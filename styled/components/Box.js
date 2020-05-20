@@ -4,7 +4,7 @@ import { sizeBase, styleBase, imageBase, shapeBase } from "../base";
 const Box = styled.div`
   ${sizeBase}
   ${styleBase}
-  ${imageBase}
+  // ${imageBase}
   ${shapeBase}
 `;
 
