@@ -11,7 +11,7 @@ const Flex = styled.div`
   ${flexRowBase}
   ${sizeBase}
   ${styleBase}
-  ${imageBase}
+  // ${imageBase}
   ${shapeBase}
 `;
 

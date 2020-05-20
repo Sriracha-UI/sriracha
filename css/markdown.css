@@ -103,8 +103,6 @@
 
 .markdown-body img {
   border-style: none;
-  width: auto;
-  height: auto;
 }
 
 .markdown-body code,
@@ -306,7 +304,7 @@
   appearance: none;
 }
 
-.markdown-body :checked + .radio-label {
+.markdown-body :checked+.radio-label {
   position: relative;
   z-index: 1;
   border-color: #0366d6;
@@ -629,11 +627,11 @@
   clear: both;
 }
 
-.markdown-body > :first-child {
+.markdown-body> :first-child {
   margin-top: 0 !important;
 }
 
-.markdown-body > :last-child {
+.markdown-body> :last-child {
   margin-bottom: 0 !important;
 }
 
@@ -668,11 +666,11 @@
   border-left: 0.25em solid #dfe2e5;
 }
 
-.markdown-body blockquote > :first-child {
+.markdown-body blockquote> :first-child {
   margin-top: 0;
 }
 
-.markdown-body blockquote > :last-child {
+.markdown-body blockquote> :last-child {
   margin-bottom: 0;
 }
 
@@ -736,11 +734,11 @@
   word-wrap: break-all;
 }
 
-.markdown-body li > p {
+.markdown-body li>p {
   margin-top: 16px;
 }
 
-.markdown-body li + li {
+.markdown-body li+li {
   margin-top: 0.25em;
 }
 
@@ -991,7 +989,7 @@
   list-style-type: none;
 }
 
-.markdown-body .task-list-item + .task-list-item {
+.markdown-body .task-list-item+.task-list-item {
   margin-top: 3px;
 }
 
