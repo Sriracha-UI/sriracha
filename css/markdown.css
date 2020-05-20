@@ -103,6 +103,8 @@
 
 .markdown-body img {
   border-style: none;
+  width: auto;
+  height: auto;
 }
 
 .markdown-body code,
