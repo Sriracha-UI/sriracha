@@ -45,7 +45,7 @@ const CabinetWrapper = styled.div`
 
   .cabinet {
     z-index: 2000;
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: 30rem;
     display: flex;
