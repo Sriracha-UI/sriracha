@@ -1,10 +1,19 @@
 import { css } from "styled-components";
-import { textCenter, fontSize, fontWeight } from "../../../maps";
+import { textCenter, fSize, fontWeight } from "../../../maps";
 
 export default css`
   font-family: ${(props) => (props.font ? props.font : "inherit")};
-  font-size: ${(props) => (props.fSize ? props.fSize : fontSize)};
+  font-size: ${(props) => (props.fontSize ? props.fontSize : fSize)};
   font-weight: ${(props) => (props.weight ? props.weight : fontWeight)};
   text-decoration: ${(props) => (props.textDec ? props.textDec : "none")}
   text-align: ${textCenter};
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: ${(props) =>
+      props.headFont ? props.headFont : '"Bellota", cursive'};
+  }
 `;
