@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 export const useCabinet = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isCabinet, setIsCabinet] = useState(false);
 
   function toggleCabinet() {
-    setIsOpen(!isOpen);
+    setIsCabinet(!isCabinet);
   }
 
-  return [isOpen, toggleCabinet];
+  return [isCabinet, toggleCabinet];
 };
