@@ -1,6 +1,7 @@
 export { default as sideways } from "./styles/width";
 export { default as hvrWidth } from "./styles/hoverWidth";
 export { default as boxShadow } from "./styles/box/boxShadow";
+export { default as hoverShadow } from "./styles/box/hoverShadow";
 export { default as defaultShadow } from "./styles/box/defaultShadow";
 export { default as boxSize } from "./styles/box/boxSizing";
 export { default as shape } from "./styles/box/boxShape";

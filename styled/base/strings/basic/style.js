@@ -9,13 +9,13 @@ export default css`
   opacity: ${(props) => (props.opacity ? props.opacity : "none")};
   box-shadow: ${(props) => (props.shadow ? props.shadow : boxShadow)};
 
-  transition: border 1s, color 1s, background 1s, background 1s, box-shadow 1s;
+  transition: border 1s, color 0.5s, background 1s, background 1s, box-shadow 1s;
 
   &:hover {
     border: ${(props) => (props.hvrBorder ? props.hvrBorder : "none")};
     color: ${(props) => (props.hvrColor ? props.hvrColor : "auto")};
     background: ${(props) => (props.hvrBg ? props.hvrBg : "auto")};
-    box-shadow: ${(props) => (props.hvrShadow ? props.hvrShadow : "auto")};
+    box-shadow: ${(props) => (props.hvrShadow ? props.hvrShadow : hoverShadow)};
     cursor: ${cursorStyle};
   }
 `;

@@ -1,5 +1,5 @@
 import { css } from "styled-components";
-import { cursorStyle, boxShadow } from "../../../maps";
+import { cursorStyle, boxShadow, hoverShadow } from "../../../maps";
 import { theme } from "../../../theme";
 
 export default css`
@@ -19,7 +19,16 @@ export default css`
       props.hvrBorder ? props.hvrBorder : `0.2rem solid ${theme.colors.blue1}`};
     color: ${(props) => (props.hvrColor ? props.hvrColor : "auto")};
     background: ${(props) => (props.hvrBg ? props.hvrBg : "auto")};
-    box-shadow: ${(props) => (props.hvrShadow ? props.hvrShadow : "auto")};
+    box-shadow: ${(props) => (props.hvrShadow ? props.hvrShadow : hoverShadow)};
+    cursor: ${cursorStyle};
+  }
+
+  &:focus {
+    border: ${(props) =>
+      props.hvrBorder ? props.hvrBorder : `0.2rem solid ${theme.colors.blue1}`};
+    color: ${(props) => (props.hvrColor ? props.hvrColor : "auto")};
+    background: ${(props) => (props.hvrBg ? props.hvrBg : "auto")};
+    box-shadow: ${(props) => (props.hvrShadow ? props.hvrShadow : hoverShadow)};
     cursor: ${cursorStyle};
   }
 `;

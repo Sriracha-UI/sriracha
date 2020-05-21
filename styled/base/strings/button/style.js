@@ -6,6 +6,7 @@ import {
   buttonHoverBackground,
   buttonCursorStyle,
   boxShadow,
+  hoverShadow,
   activeBackground,
   buttonRadius,
 } from "../../../maps";
@@ -26,7 +27,7 @@ export default css`
     color: ${(props) => (props.hvrColor ? props.hvrColor : buttonHoverColor)};
     background: ${(props) =>
       props.hvrBg ? props.hvrBg : buttonHoverBackground};
-    box-shadow: ${(props) => (props.hvrShadow ? props.hvrShadow : "auto")};
+    box-shadow: ${(props) => (props.hvrShadow ? props.hvrShadow : hoverShadow)};
     cursor: ${buttonCursorStyle};
   }
 
