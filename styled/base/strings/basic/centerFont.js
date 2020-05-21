@@ -13,7 +13,6 @@ export default css`
   h4,
   h5,
   h6 {
-    font-family: ${(props) =>
-      props.headFont ? props.headFont : '"Bellota", cursive'};
+    font-family: ${(props) => (props.headFont ? props.headFont : "inherit")};
   }
 `;
