@@ -1,16 +1,16 @@
-# The Bushido-strap Styled Components Library 🎨
+# The Sriracha UI Styled Components Library 🎨
 
-Bushido-strap is a design system built with accessability as the highest priority.
+Sriracha UI is a design system built with accessability as the highest priority.
 
 ## Getting Started
 
 ### Installing
 
-To install Bushido-strap to your project simply run `yarn add bushido-strap` || `npm i bushido-strap` and your ready to hook it up!
+To install Sriracha UI to your project simply run `yarn add sriracha-ui` || `npm i sriracha-ui` and your ready to hook it up!
 
 ### CSS overhaul and AppWrapper
 
-Bushido-strap comes with a css file you can import that includes a nice subtle style overhaul and a normalize. Just add `import "bushido-strap/css/main.css";` to the top of your src/index.js!
+Sriracha UI comes with a css file you can import that includes a nice subtle style overhaul and a normalize. Just add `import "sriracha-ui/css/main.css";` to the top of your src/index.js!
 
 AppWrapper is a powerful component that lets you set the background and fonts of your application.
 
@@ -21,13 +21,11 @@ Example:
 export default function App() {
   return (
     <AppWrapper
-    bgSrc={
-      /* This prop lets you easily set a responsive image as your background */
-    }
-    bg={/* Lets you set the background color of the app */}
-    headFont={/* Lets you change the font of all the headers in the app */}
-    font={/* Lets you can the font of everything else in the app */}
-  >
+      bgSrc={/* This prop lets you easily set a responsive image as your background */}
+      bg={/* Lets you set the background color of the app */}
+      headFont={/* Lets you change the font of all the headers in the app */}
+      font={/* Lets you can the font of everything else in the app */}
+    >
       <Route path="/" exact component={Dashboard} />
     </AppWrapper>
   );
@@ -36,7 +34,7 @@ export default function App() {
 
 ### Style Props and Maps
 
-Bushido-strap comes with some unique style props and maps that make laying out and editing you page very easily.
+Sriracha UI comes with some unique style props and maps that make laying out and editing you page very easily.
 
 Style props need to be given a value and the associated
 
@@ -130,64 +128,60 @@ Example:
 
 **Style Maps:**
 
-| CSS Property Name | Style Prop    | Property Value                      |
-| ----------------- | ------------- | ----------------------------------- |
-| width             | stretch       | 100%                                |
-| margin            | xsm           | 1rem                                |
-| margin            | sm            | 2rem                                |
-| margin            | mm            | 3rem                                |
-| margin            | lm            | 4rem                                |
-| margin            | xlm           | 5rem                                |
-| padding           | xsp           | 1rem                                |
-| padding           | sp            | 2rem                                |
-| padding           | mp            | 3rem                                |
-| padding           | lp            | 4rem                                |
-| padding           | xlp           | 5rem                                |
-| font-size         | xsf           | 0.6rem                              |
-| font-size         | sf            | 1rem                                |
-| font-size         | mf            | 1.4rem                              |
-| font-size         | lf            | 2rem                                |
-| font-size         | xlf           | 3rem                                |
-| box-shadow        | shade         | 0 0.3rem 1rem ${theme.colors.gray7} |
-| box-shadow        | backlight     | 0 0.3rem 1rem ${theme.colors.gray0} |
-| box-sizing        | cbox          | content-box                         |
-| box-sizing        | init          | initial                             |
-| box-sizing        | inherit       | inherit                             |
-| overflow          | visible       | visible                             |
-| overflow          | scroll        | scroll                              |
-| overflow          | auto          | auto                                |
-| text-align        | taRight       | right                               |
-| text-align        | taLeft        | left                                |
-| text-align        | taCenter      | center                              |
-| text-align        | taJustify     | justify                             |
-| text-align        | taAll         | justify-all                         |
-| text-align        | taStart       | start                               |
-| text-align        | taEnd         | end                                 |
-| background-size   | sizeLen       | length                              |
-| background-size   | sizeCover     | cover                               |
-| background-size   | sizeContain   | contain                             |
-| background-size   | sizeInitial   | initial                             |
-| background-size   | sizeInherit   | inherit                             |
-| background-size   | sizeAuto      | auto                                |
-| background-attach | attachFix     | fix                                 |
-| background-attach | attachLocal   | local                               |
-| background-attach | attachInherit | inherit                             |
-| background-attach | attachInitial | initial                             |
-| background-attach | attachScroll  | scroll                              |
+| CSS Property Name | Style Prop    | Property Value                       |
+| ----------------- | ------------- | ------------------------------------ |
+| width             | stretch       | 100%                                 |
+| margin            | xsm           | 1rem                                 |
+| margin            | sm            | 2rem                                 |
+| margin            | mm            | 3rem                                 |
+| margin            | lm            | 4rem                                 |
+| margin            | xlm           | 5rem                                 |
+| padding           | xsp           | 1rem                                 |
+| padding           | sp            | 2rem                                 |
+| padding           | mp            | 3rem                                 |
+| padding           | lp            | 4rem                                 |
+| padding           | xlp           | 5rem                                 |
+| font-size         | xsf           | 0.6rem                               |
+| font-size         | sf            | 1rem                                 |
+| font-size         | mf            | 1.4rem                               |
+| font-size         | lf            | 2rem                                 |
+| font-size         | xlf           | 3rem                                 |
+| box-shadow        | shade         | 0 0.3rem 1rem \${theme.colors.gray7} |
+| box-shadow        | backlight     | 0 0.3rem 1rem \${theme.colors.gray0} |
+| box-sizing        | cbox          | content-box                          |
+| box-sizing        | init          | initial                              |
+| box-sizing        | inherit       | inherit                              |
+| overflow          | visible       | visible                              |
+| overflow          | scroll        | scroll                               |
+| overflow          | auto          | auto                                 |
+| text-align        | taRight       | right                                |
+| text-align        | taLeft        | left                                 |
+| text-align        | taCenter      | center                               |
+| text-align        | taJustify     | justify                              |
+| text-align        | taAll         | justify-all                          |
+| text-align        | taStart       | start                                |
+| text-align        | taEnd         | end                                  |
+| background-size   | sizeLen       | length                               |
+| background-size   | sizeCover     | cover                                |
+| background-size   | sizeContain   | contain                              |
+| background-size   | sizeInitial   | initial                              |
+| background-size   | sizeInherit   | inherit                              |
+| background-size   | sizeAuto      | auto                                 |
+| background-attach | attachFix     | fix                                  |
+| background-attach | attachLocal   | local                                |
+| background-attach | attachInherit | inherit                              |
+| background-attach | attachInitial | initial                              |
+| background-attach | attachScroll  | scroll                               |
 
-## New Semantic Components!
-
-Now featuring new semantic components! Main, Section and Aside. They work much like Flex but with flex direction default to column and align items default to center. Main difference is that they break down into their sematic counterparts instead of div's.
-
-### AppWrapper:
+### AppWrapper
 
 AppWrapper is a div that is meant to wrap your app page, where you hold your routes. It's purpose is to easily change the font and background of the whole application.
 
-### Wrapper:
+### Wrapper
 
 This should wrap every parent component. It set's min height to 100% view height, and max width is set to 100% view width. This makes flexing items around your page a dream. Default flex-direction is set to column instead of row and align-items is set to.
 
-### Text:
+### Text
 
 A text component that lets you set size, font and font weight easily.
 
@@ -200,7 +194,7 @@ Example:
 </Text>
 ```
 
-### Box:
+### Box
 
 Box is a div with lots of useful props. Images inside the box are set to `width: 100%; height: auto;` so they will size responsively. Just adjust the with of the Box to size the image.
 
@@ -243,11 +237,12 @@ Will look like...
 </Flex>
 ```
 
-### Card:
+### Card
 
 A beautiful card component that helps you lay out chunks of information across the page. Has flex properties; flex direction is column and align items is center by default. To change them to row and normal just add across prop.
 
 Example:
+
 ```javascript
 <Card across></Card>
 ```
@@ -255,13 +250,14 @@ Example:
 Card also has an invert color map that inverts the values making the background dark and the text light.
 
 Example:
+
 ```javascript
 <Card across>
   <h1>This is a dark mode card.</h1>
 </Card>
 ```
 
-### Text:
+### Text
 
 A text component that lets you set size, font and font weight easily.
 
@@ -367,7 +363,7 @@ Example:
 </Wrapper>
 ```
 
-### Button:
+### Button
 
 It's a beautiful button! It has some color props to quickly and easily change the color scheme of the button.
 
@@ -384,7 +380,7 @@ List of color props:
 - pink
 - invert
 
-### Linkton:
+### Linkton
 
 Looks exactly like a button, but is a Link from @reach/router.
 
@@ -404,30 +400,32 @@ List of color props:
 Example:
 
 ```javascript
-<Linkton to="/" red>Go home</Linkton>
+<Linkton to="/" red>
+  Go home
+</Linkton>
 ```
 
-### Form:
+### Form
 
 It's a form with flex-box (direction: column, align: center by default).
 
-### Input:
+### Input
 
 A better looking input to use.
 
-### Importing bushido-strap css and styled components 🚀
+### Importing sriracha-ui css and styled components 🚀
 
-It's highly recommended to pull in bushido-strap's global style overhauls, just `import "bushido-strap/css/main.css"` in your root index.js file. Feel free to check out the code to see what is under the hood! 🔥
+It's highly recommended to pull in sriracha-ui's global style overhauls, just `import "sriracha-ui/css/main.css"` in your root index.js file. Feel free to check out the code to see what is under the hood! 🔥
 
-All styled components get exported from `bushido-strap`. So all you need to do is deconstruct the component(s) you want from "bushido-strap".
+All styled components get exported from `sriracha-ui`. So all you need to do is deconstruct the component(s) you want from "sriracha-ui".
 
-#### Example:
+#### Example
 
 `./src/components/MyComponent`
 
 ```javascript
 import React from "react";
-import { Wrapper, Flex, Button } from "bushido-strap";
+import { Wrapper, Flex, Button } from "sriracha-ui";
 
 export default function MyComponent() {
   return (
@@ -447,13 +445,13 @@ export default function MyComponent() {
 
 ## Theme Color Variables 🖌
 
-If you want to use the color variables in just throw in theme to your Bushido-strap import: `import { theme } from "bushido-strap"`
+If you want to use the color variables in just throw in theme to your Sriracha UI import: `import { theme } from "sriracha-ui"`
 
 Example:
 
 ```javascript
 import React from "react";
-import { Wrapper, Flex, Button, theme } from "bushido-strap";
+import { Wrapper, Flex, Button, theme } from "sriracha-ui";
 
 export default function MyComponent() {
   return (
@@ -471,9 +469,9 @@ export default function MyComponent() {
 }
 ```
 
-[Check here to see the full list of my javascript theme colors.](https://github.com/ApaptivUI/bushido-strap/blob/master/styled/theme/index.js)
+[Check here to see the full list of my javascript theme colors.](https://github.com/ApaptivUI/sriracha-ui/blob/master/styled/theme/index.js)
 
-### Flex and Box Shape Props!
+### Flex and Box Shape Props
 
 Flex's and Box's have unique shape props you can use to turn your div's into awesome little shapes! Highly recommend using the sqr prop to set height and width to equal size's and giving a background (bg) prop color since the default is set to none.
 

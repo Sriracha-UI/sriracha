@@ -20,7 +20,5 @@ export default css`
   h6 {
     font-family: ${(props) =>
       props.headFont ? props.headFont : '"Bellota", cursive'};
-    line-height: 1.2;
-    margin: 1.6rem;
   }
 `;
