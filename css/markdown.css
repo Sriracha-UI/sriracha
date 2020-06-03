@@ -4,10 +4,6 @@
 
 @import url("https://fonts.googleapis.com/css?family=Space+Mono&display=swap");
 
-/* .markdown-body {
-  max-width: 100%;
-} */
-
 .markdown-body .octicon {
   display: inline-block;
   fill: currentColor;
@@ -72,7 +68,7 @@
   -webkit-text-size-adjust: 100%;
   line-height: 1.5;
   color: #24292e;
-  font-family: "Open Sans", sans-serif;
+  font-family: inherit;
   font-size: 16px;
   line-height: 1.5;
   word-wrap: break-word;
