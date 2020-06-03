@@ -4,9 +4,9 @@
 
 @import url("https://fonts.googleapis.com/css?family=Space+Mono&display=swap");
 
-.markdown-body {
+/* .markdown-body {
   max-width: 100%;
-}
+} */
 
 .markdown-body .octicon {
   display: inline-block;
@@ -108,12 +108,6 @@
 .markdown-body img {
   border-style: none;
 }
-
-/* .markdown-body table {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-} */
 
 .markdown-body code,
 .markdown-body kbd,
@@ -771,7 +765,6 @@
 
 .markdown-body table {
   display: block;
-  /* width: 100%; */
   overflow: auto;
 }
 
