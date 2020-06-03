@@ -109,11 +109,11 @@
   border-style: none;
 }
 
-.markdown-body table {
+/* .markdown-body table {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-}
+} */
 
 .markdown-body code,
 .markdown-body kbd,
