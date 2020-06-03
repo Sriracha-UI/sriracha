@@ -110,7 +110,9 @@
 }
 
 .markdown-body table {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .markdown-body code,
