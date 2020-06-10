@@ -4,6 +4,8 @@ import { marg, pad } from "../../../maps";
 
 export default css`
   background: ${(props) => (props.bg ? props.bg : theme.colors.gray2)};
+  background-image: ${(props) =>
+    props.bgSrc ? `url(${props.bgSrc})` : "none"};
   font-family: ${(props) =>
     props.font ? props.font : '"Open Sans", sans-serif'};
   min-height: ${(props) => (props.minH ? props.minH : "none")};
