@@ -7,5 +7,5 @@ export const useModal = () => {
     setIsModal(!isModal);
   }
 
-  return [isModal, toggleModal];
+  return { isModal, toggleModal };
 };

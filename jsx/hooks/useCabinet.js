@@ -7,5 +7,5 @@ export const useCabinet = () => {
     setIsCabinet(!isCabinet);
   }
 
-  return [isCabinet, toggleCabinet];
+  return { isCabinet, toggleCabinet };
 };
