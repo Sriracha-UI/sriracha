@@ -14,6 +14,8 @@ import NavLink from "./jsx/components/NavLink";
 import Modal from "./jsx/components/Modal";
 import Cabinet from "./jsx/components/Cabinet";
 
+import { ServerStyleSheet } from "styled-components";
+
 // exports
 export {
   ThemeWrapper,
@@ -24,6 +26,7 @@ export {
   useTheme,
   Modal,
   Cabinet,
+  ServerStyleSheet,
 };
 
 // export style components
