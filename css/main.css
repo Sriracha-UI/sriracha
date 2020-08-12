@@ -209,17 +209,6 @@ html body a:hover {
   display: none;
 }
 
-/* html body code {
-  background-color: #b3b3b3;
-  color: #333333;
-  padding: 0 0.2rem;
-  border-radius: 0.3rem;
-} */
-
-/* html body button:focus {
-  outline: 0;
-} */
-
 html body img {
   border-radius: 0.4rem;
 }
