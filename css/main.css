@@ -205,6 +205,10 @@ html body a:hover {
   color: var(--blue7);
 }
 
+.hidden {
+  display: none;
+}
+
 /* html body code {
   background-color: #b3b3b3;
   color: #333333;
