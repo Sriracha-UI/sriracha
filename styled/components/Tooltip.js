@@ -8,7 +8,7 @@ import {
   toolTipBase,
 } from "../base";
 
-const ToolTip = styled.div`
+const Tooltip = styled.div`
   ${flexRowBase}
   ${sizeBase}
   ${styleBase}
