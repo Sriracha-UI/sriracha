@@ -14,7 +14,7 @@ const ToolTip = styled.div`
   ${styleBase}
   ${shapeBase}
   ${fontBase} 
-  ${toolTipBase} 
+  ${toolTipBase}
 `;
 
-export default ToolTip;
+export default Tooltip;

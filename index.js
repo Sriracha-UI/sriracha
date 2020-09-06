@@ -41,4 +41,4 @@ export { default as Card } from "./styled/components/Card";
 export { default as Box } from "./styled/components/Box";
 export { default as Hero } from "./styled/components/Hero";
 export { default as Text } from "./styled/components/Text";
-export { default as ToolTip } from "./styled/components/ToolTip";
+export { default as Tooltip } from "./styled/components/Tooltip";
