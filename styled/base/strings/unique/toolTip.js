@@ -6,6 +6,7 @@ export default css`
     visibility: hidden;
     opacity: 0;
     margin: ${(props) => (props.ttM ? props.ttM : "0")};
+    padding: ${(props) => (props.ttP ? props.ttP : "2rem")};
     width: ${(props) => (props.ttW ? props.ttW : "auto")};
     height: ${(props) => (props.ttH ? props.ttH : "auto")};
     color: ${(props) => (props.ttColor ? props.ttColor : theme.colors.gray0)};
