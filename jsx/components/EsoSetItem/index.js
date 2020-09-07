@@ -3,7 +3,6 @@ import { Tooltip, Card, Text, Box, theme } from "../../../index";
 import Error from "./Error";
 import Loading from "./Loading";
 import axios from "axios";
-import "sriracha-ui/css/main.css";
 import "./styles.css";
 
 const EsoSetItem = ({ name, ...rest }) => {

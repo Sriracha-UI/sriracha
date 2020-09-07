@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Text } from "sriracha-ui";
+import { Card, Text } from "../../../index";
 
 export default function Error() {
   return (
