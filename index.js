@@ -13,6 +13,7 @@ import { useCabinet } from "./jsx/hooks/useCabinet";
 import NavLink from "./jsx/components/NavLink";
 import Modal from "./jsx/components/Modal";
 import Cabinet from "./jsx/components/Cabinet";
+import EsoSetItem from "./jsx/components/EsoSetItem";
 
 import { ServerStyleSheet } from "styled-components";
 
@@ -27,6 +28,7 @@ export {
   Modal,
   Cabinet,
   ServerStyleSheet,
+  EsoSetItem,
 };
 
 // export style components
