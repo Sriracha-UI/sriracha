@@ -5,6 +5,7 @@ export default css`
   & .tooltip {
     visibility: hidden;
     opacity: 0;
+    margin: ${(props) => (props.ttM ? props.ttM : "0")};
     width: ${(props) => (props.ttW ? props.ttW : "auto")};
     height: ${(props) => (props.ttH ? props.ttH : "auto")};
     color: ${(props) => (props.ttColor ? props.ttColor : theme.colors.gray0)};
