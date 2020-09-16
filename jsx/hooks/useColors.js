@@ -263,7 +263,7 @@ export const useColors = () => {
         pinkA7: localStorage.getItem("darkMode") ? "#ff80ab" : "#c51162",
         whiteAlpha0: localStorage.getItem("darkMode")
           ? "rgba(0, 0, 0, 0.04)"
-          : rgba(255, 255, 255, 0.04),
+          : "rgba(255, 255, 255, 0.04)",
         whiteAlpha1: localStorage.getItem("darkMode")
           ? "rgba(0, 0, 0, 0.06)"
           : "rgba(255, 255, 255, 0.06)",
