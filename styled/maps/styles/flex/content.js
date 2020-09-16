@@ -1,11 +1,11 @@
 import styledMap from "styled-map";
 
 export default styledMap`
-  acCenter: center;
-  acStart: flex-start;
+  acc: center;
+  acs: flex-start;
   acEnd: flex-end;
-  acBetween: space-between;
-  acAround: space-around;
-  acEvenly: space-evenly;
+  acb: space-between;
+  aca: space-around;
+  ace: space-evenly;
   default: stretch;
 `;

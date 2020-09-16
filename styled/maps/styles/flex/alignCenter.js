@@ -1,10 +1,10 @@
 import styledMap from "styled-map";
 
 export default styledMap`
-  aiStart: flex-start;
-  aiEnd: flex-end;
-  aiStretch: stretch;
-  aiNormal: normal;
+  ais: flex-start;
+  aie: flex-end;
+  aiStr: stretch;
+  ain: normal;
   across: normal;
   default: center;
 `;

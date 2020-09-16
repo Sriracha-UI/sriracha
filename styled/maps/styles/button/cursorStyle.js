@@ -8,7 +8,6 @@ export default styledMap`
   colResize: col-resize;
   copy: copy;
   crosshair: crosshair;
-  // default: default;
   eResize: e-resize;
   ewResize: ew-resize;
   grab: grab;
