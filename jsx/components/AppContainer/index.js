@@ -4,7 +4,7 @@ import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./theme";
 import { GlobalStyles } from "../../../styled/components/GlobalStyles";
 
-export default function AppContainer({ children, ...rest }) {
+export default function AppContainer({ theme, children, ...rest }) {
   const themeMode = theme === "light" ? lightTheme : darkTheme;
   return (
     <ThemeProvider theme={themeMode}>
