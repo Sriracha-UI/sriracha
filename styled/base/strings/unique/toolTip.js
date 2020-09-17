@@ -1,5 +1,4 @@
 import { css } from "styled-components";
-import { theme } from "../../../theme";
 
 export default css`
   & .tooltip {
@@ -9,7 +8,7 @@ export default css`
     padding: ${(props) => (props.ttP ? props.ttP : "2rem")};
     width: ${(props) => (props.ttW ? props.ttW : "auto")};
     height: ${(props) => (props.ttH ? props.ttH : "auto")};
-    color: ${(props) => (props.ttColor ? props.ttColor : theme.colors.gray0)};
+    color: ${(props) => (props.ttColor ? props.ttColor : props.theme.gray0)};
     background: ${(props) => (props.ttBg ? props.ttBg : "none")};
     top: ${(props) => (props.ttTop ? props.ttTop : "none")};
     right: ${(props) => (props.ttRight ? props.ttRight : "none")};

@@ -3,7 +3,7 @@ import { theme } from "../../../theme";
 import { marg, pad } from "../../../maps";
 
 export default css`
-  background: ${(props) => (props.bg ? props.bg : theme.colors.gray2)};
+  background: ${(props) => (props.bg ? props.bg : props.theme.gray2)};
   background-image: ${(props) =>
     props.bgSrc ? `url(${props.bgSrc})` : "none"};
   font-family: ${(props) =>
