@@ -16,8 +16,7 @@ import Cabinet from "./jsx/components/Cabinet";
 import AppContainer from "./jsx/components/AppContainer";
 import ToggleTheme from "./jsx/components/ToggleTheme";
 
-import { ServerStyleSheet } from "styled-components";
-import { withTheme } from "styled-components";
+import styled, { ServerStyleSheet, withTheme, css } from "styled-components";
 
 // exports
 export {
@@ -26,12 +25,14 @@ export {
   useModal,
   useCabinet,
   useDarkMode,
-  useTheme,
+  // useTheme,
   Modal,
   Cabinet,
   ServerStyleSheet,
   AppContainer,
   ToggleTheme,
+  styled,
+  css,
 };
 
 // export style components
