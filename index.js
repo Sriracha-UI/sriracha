@@ -1,7 +1,7 @@
 // export theme stuff
 import ThemeWrapper from "./jsx/components/ThemeProvider";
 
-import { withTheme, useTheme } from "./jsx/components/ThemeProvider";
+// import { withTheme, useTheme } from "./jsx/components/ThemeProvider";
 
 export { theme } from "./styled/theme";
 
@@ -17,6 +17,7 @@ import AppContainer from "./jsx/components/AppContainer";
 import ToggleTheme from "./jsx/components/ToggleTheme";
 
 import { ServerStyleSheet } from "styled-components";
+import { withTheme } from "styled-components";
 
 // exports
 export {
