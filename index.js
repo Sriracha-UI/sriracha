@@ -8,13 +8,12 @@ export { theme } from "./styled/theme";
 // export hooks
 import { useModal } from "./jsx/hooks/useModal";
 import { useCabinet } from "./jsx/hooks/useCabinet";
-import { useColors } from "./jsx/hooks/useColors";
 
 // jsx components
-import NavLink from "./jsx/components/NavLink";
 import Modal from "./jsx/components/Modal";
 import Cabinet from "./jsx/components/Cabinet";
-// import EsoSetItem from "./jsx/components/EsoSetItem";
+import AppContainer from "./jsx/components/AppContainer";
+import ToggleTheme from "./jsx/components/ToggleTheme";
 
 import { ServerStyleSheet } from "styled-components";
 
@@ -22,15 +21,14 @@ import { ServerStyleSheet } from "styled-components";
 export {
   ThemeWrapper,
   withTheme,
-  NavLink,
   useModal,
   useCabinet,
   useTheme,
   Modal,
   Cabinet,
   ServerStyleSheet,
-  useColors,
-  // EsoSetItem,
+  AppContainer,
+  ToggleTheme,
 };
 
 // export style components

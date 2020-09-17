@@ -1,7 +1,6 @@
 // theme variables are set here
 export const theme = {
   colors: {
-    // Grayscale
     gray0: "#FAFAFA",
     gray1: "#F5F5F5",
     gray2: "#EEEEEE",
@@ -13,7 +12,6 @@ export const theme = {
     gray8: "#424242",
     gray9: "#212121",
 
-    // Cool gray colors
     coolGray0: "#ECEFF1",
     coolGray1: "#CFD8DC",
     coolGray2: "#B0BEC5",
