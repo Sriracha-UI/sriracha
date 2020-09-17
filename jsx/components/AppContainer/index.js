@@ -6,7 +6,7 @@ import { GlobalStyles } from "../../../styled/components/GlobalStyles";
 import { useDarkMode } from "../../hooks/useDarkMode";
 
 export default function AppContainer({ children, ...rest }) {
-  const [theme] = useDarkMode();
+  const { theme } = useDarkMode();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
   return (
     <ThemeProvider theme={themeMode}>
