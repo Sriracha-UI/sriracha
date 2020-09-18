@@ -4,5 +4,6 @@ export default styledMap`
   visible: visible;
   scroll: scroll;
   auto: auto;
-  default: hidden;
+  hidden: hidden;
+  default: visible;
 `;

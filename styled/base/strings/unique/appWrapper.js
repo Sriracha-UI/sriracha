@@ -3,7 +3,18 @@ import { marg, pad } from "../../../maps";
 import { getBackground } from "../../../functions";
 
 export default css`
-  ${(props) => getBackground(props, props.theme.colors.background)}
+  color: ${(props) =>
+    !props.color
+      ? props.theme.colors.gray9
+      : props.theme.colors[props.color]
+      ? props.theme.colors[props.color]
+      : props.color};
+  background: ${(props) =>
+    !props.bg
+      ? props.theme.colors.background
+      : props.theme.colors[props.bg]
+      ? props.theme.colors[props.bg]
+      : props.bg};
   background-image: ${(props) =>
     props.bgSrc ? `url(${props.bgSrc})` : "none"};
   font-family: ${(props) =>
@@ -21,6 +32,6 @@ export default css`
   h5,
   h6 {
     font-family: ${(props) =>
-      props.headFont ? props.headFont : '"Bellota", cursive'};
+      props.headFont ? props.headFont : '"Open Sans", cursive'};
   }
 `;

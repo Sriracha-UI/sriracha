@@ -7,28 +7,40 @@ import {
   textCenter,
   hoverShadow,
 } from "../../../maps";
-import {
-  getColor,
-  getBackground,
-  getHvrColor,
-  getHvrBackground,
-} from "../../../functions";
 
 export default css`
-  ${(props) => getColor(props, cardColor)}
-  ${(props) => getBackground(props, cardBackground)}
-  border: ${(props) =>
-    props.border ? props.border : "none"};
+  color: ${(props) =>
+    !props.color
+      ? cardColor
+      : props.theme.colors[props.color]
+      ? props.theme.colors[props.color]
+      : props.color};
+  background: ${(props) =>
+    !props.bg
+      ? cardBackground
+      : props.theme.colors[props.bg]
+      ? props.theme.colors[props.bg]
+      : props.bg};
+  border: ${(props) => (props.border ? props.border : "none")};
   border-radius: ${(props) => (props.radius ? props.radius : "0.3rem")};
   opacity: ${(props) => (props.opacity ? props.opacity : "none")};
   box-shadow: ${(props) => (props.shadow ? props.shadow : boxShadow)};
   text-align: ${textCenter};
 
   &:hover {
-    ${(props) => getHvrColor(props, "auto")}
-    ${(props) => getHvrBackground(props, "auto")}
-    border: ${(props) =>
-      props.hvrBorder ? props.hvrBorder : "none"};
+    color: ${(props) =>
+      !props.hvrColor
+        ? "auto"
+        : props.theme.colors[props.hvrColor]
+        ? props.theme.colors[props.hvrColor]
+        : props.hvrColor};
+    background: ${(props) =>
+      !props.hvrBg
+        ? "auto"
+        : props.theme.colors[props.hvrBg]
+        ? props.theme.colors[props.hvrBg]
+        : props.hvrBg};
+    border: ${(props) => (props.hvrBorder ? props.hvrBorder : "none")};
     box-shadow: ${(props) => (props.hvrShadow ? props.hvrShadow : hoverShadow)};
     cursor: ${cursorStyle};
   }
