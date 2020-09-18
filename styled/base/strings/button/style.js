@@ -29,7 +29,7 @@ export default css`
   opacity: ${(props) => (props.opacity ? props.opacity : "none")};
   box-shadow: ${(props) => (props.shadow ? props.shadow : boxShadow)};
 
-  transition: color 0.5s, background 0.5s, box-shadow 0.5s;
+  // transition: color 0.5s, background 0.5s, box-shadow 0.5s;
 
   &:hover {
     color: ${(props) =>
@@ -40,13 +40,19 @@ export default css`
         : props.hvrColor};
     background: ${(props) =>
       !props.hvrBg
-        ? `rgba(${buttonHoverBackground}, 1.5)`
+        ? buttonHoverBackground
         : props.theme.colors[props.hvrBg]
         ? props.theme.colors[props.hvrBg]
         : props.hvrBg};
     border: ${(props) => (props.hvrBorder ? props.hvrBorder : "none")};
     box-shadow: ${(props) => (props.hvrShadow ? props.hvrShadow : hoverShadow)};
     cursor: ${buttonCursorStyle};
+    -webkit-filter: brightness(80%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
 
   &:active {
