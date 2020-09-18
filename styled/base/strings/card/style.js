@@ -9,12 +9,7 @@ import {
 } from "../../../maps";
 
 export default css`
-  color: ${(props) =>
-    !props.color
-      ? cardColor
-      : props.theme[props.color]
-      ? props.theme[props.color]
-      : props.color};
+  color: ${(props) => (!props.color ? cardColor : props.theme[props.color])};
   background: ${(props) => (props.bg ? props.bg : cardBackground)};
   border: ${(props) => (props.border ? props.border : "none")};
   border-radius: ${(props) => (props.radius ? props.radius : "0.3rem")};
