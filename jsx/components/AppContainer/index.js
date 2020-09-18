@@ -10,7 +10,7 @@ export default function AppContainer({ theme, children, ...rest }) {
     ...nickNacks,
   };
 
-  darkTheme = {
+  const darkTheme = {
     colors: darkColors,
     ...nickNacks,
   };
