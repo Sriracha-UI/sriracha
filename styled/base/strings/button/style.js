@@ -10,11 +10,18 @@ import {
   activeBackground,
   buttonRadius,
 } from "../../../maps";
+import {
+  getColor,
+  getBackground,
+  getHvrColor,
+  getHvrBackground,
+} from "../../../functions";
 
 export default css`
-  color: ${(props) => (props.color ? props.color : buttonColor)};
-  background: ${(props) => (props.bg ? props.bg : buttonBackground)};
-  border: ${(props) => (props.border ? props.border : "none")};
+  ${(props) => getColor(props, buttonColor)}
+  ${(props) => getBackground(props, buttonBackground)}
+  border: ${(props) =>
+    props.border ? props.border : "none"};
   border-radius: ${(props) => (props.radius ? props.radius : buttonRadius)};
   opacity: ${(props) => (props.opacity ? props.opacity : "none")};
   box-shadow: ${(props) => (props.shadow ? props.shadow : boxShadow)};
@@ -22,10 +29,11 @@ export default css`
   transition: color 0.5s, background 0.5s, box-shadow 0.5s;
 
   &:hover {
-    border: ${(props) => (props.hvrBorder ? props.hvrBorder : "none")};
-    color: ${(props) => (props.hvrColor ? props.hvrColor : buttonHoverColor)};
-    background: ${(props) =>
-      props.hvrBg ? props.hvrBg : buttonHoverBackground};
+    ${(props) => getHvrColor(props, buttonHoverColor)}
+    ${(props) => getHvrBackground(props, buttonHoverBackground)}
+    border: ${(
+      props
+    ) => (props.hvrBorder ? props.hvrBorder : "none")};
     box-shadow: ${(props) => (props.hvrShadow ? props.hvrShadow : hoverShadow)};
     cursor: ${buttonCursorStyle};
   }

@@ -3,9 +3,9 @@ import styledMap from "styled-map";
 export default styledMap`
   acc: center;
   acs: flex-start;
-  acEnd: flex-end;
+  ace: flex-end;
   acb: space-between;
   aca: space-around;
-  ace: space-evenly;
+  acv: space-evenly;
   default: stretch;
 `;

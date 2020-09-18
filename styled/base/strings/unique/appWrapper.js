@@ -1,9 +1,9 @@
 import { css } from "styled-components";
-import { theme } from "../../../theme";
 import { marg, pad } from "../../../maps";
+import { getBackground } from "../../../functions";
 
 export default css`
-  background: ${(props) => (props.bg ? props.bg : props.theme.gray2)};
+  ${(props) => getBackground(props, props.theme.colors.background)}
   background-image: ${(props) =>
     props.bgSrc ? `url(${props.bgSrc})` : "none"};
   font-family: ${(props) =>

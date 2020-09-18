@@ -1,4 +1,5 @@
 import { css } from "styled-components";
+import { getTooltipColor, getTooltipBackground } from "../../../functions";
 
 export default css`
   & .tooltip {
@@ -8,9 +9,12 @@ export default css`
     padding: ${(props) => (props.ttP ? props.ttP : "2rem")};
     width: ${(props) => (props.ttW ? props.ttW : "auto")};
     height: ${(props) => (props.ttH ? props.ttH : "auto")};
-    color: ${(props) => (props.ttColor ? props.ttColor : props.theme.gray0)};
-    background: ${(props) => (props.ttBg ? props.ttBg : "none")};
-    top: ${(props) => (props.ttTop ? props.ttTop : "none")};
+    ${(props) => getTooltipColor(props, props.theme.colors.gray9)}
+    ${(props) =>
+      getTooltipBackground(props, props.theme.colors.gray0)}
+    top: ${(
+      props
+    ) => (props.ttTop ? props.ttTop : "none")};
     right: ${(props) => (props.ttRight ? props.ttRight : "none")};
     bottom: ${(props) => (props.ttBottom ? props.ttBottom : "none")};
     left: ${(props) => (props.ttLeft ? props.ttLeft : "none")};

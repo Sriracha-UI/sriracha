@@ -1,14 +1,29 @@
 import { css } from "styled-components";
-import { sideways, boxSize, marg } from "../../../maps";
+import { sideways, marg } from "../../../maps";
+import {
+  getHeight,
+  getWidth,
+  getMinHeight,
+  getMinWidth,
+  getMaxHeight,
+  getMaxWidth,
+  getMargin,
+  getPadding,
+} from "../../../functions";
 
 export default css`
-  height: ${(props) => (props.h ? props.h : props.sqr ? props.sqr : "auto")};
-  width: ${(props) => (props.w ? props.w : props.sqr ? props.sqr : sideways)};
-  min-height: ${(props) => (props.minH ? props.minH : "none")};
-  max-width: ${(props) => (props.maxW ? props.maxW : "none")};
-  min-width: ${(props) => (props.minW ? props.minW : "none")};
-  max-height: ${(props) => (props.maxH ? props.maxH : "none")};
-  margin: ${(props) => (props.m ? props.m : marg)};
-  padding: ${(props) => (props.p ? props.p : "0.8rem")};
-  box-sizing: ${(props) => (props.boxSize ? props.boxSize : boxSize)};
+  ${(props) => getHeight(props, "auto")}
+  ${(props) => getWidth(props, sideways)}
+  ${(props) =>
+    getMaxHeight(props, "none")}
+  ${(props) => getMaxWidth(props, "none")}
+  ${(
+    props
+  ) => getMinWidth(props, "none")}
+  ${(props) =>
+    getMinHeight(props, "none")}
+  ${(props) => getMargin(props, marg)}
+  ${(
+    props
+  ) => getPadding(props, "0.8rem")};
 `;

@@ -1,10 +1,10 @@
 import styledMap from "styled-map";
 
 export default styledMap`
-  jcEnd: flex-end;
+  jce: flex-end;
   jcc: center;
   jcb: space-between;
   jca: space-around;
-  jce: space-evenly;
+  jcv: space-evenly;
   default: flex-start;
 `;

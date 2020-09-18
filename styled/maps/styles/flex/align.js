@@ -1,7 +1,7 @@
 import styledMap from "styled-map";
 
 export default styledMap`
-  aiStr: stretch;
+  aih: stretch;
   aic: center;
   ais: flex-start;
   aie: flex-end;
