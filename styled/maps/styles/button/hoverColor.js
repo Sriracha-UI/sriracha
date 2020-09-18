@@ -1,6 +1,7 @@
 import styledMap from "styled-map";
+import { theme } from "../../../theme";
 
 export default styledMap`
-  yellow: ${({ theme }) => theme.colors.deepOrange8};
-  default: ${({ theme }) => theme.colors.gray0};
+  yellow: ${theme.colors.amber7};
+  default: ${theme.colors.gray0};
 `;
