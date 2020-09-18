@@ -47,8 +47,6 @@ export default css`
     border: ${(props) => (props.hvrBorder ? props.hvrBorder : "none")};
     box-shadow: ${(props) => (props.hvrShadow ? props.hvrShadow : hoverShadow)};
     cursor: ${buttonCursorStyle};
-    -webkit-filter: ${(props) =>
-      props.filter ? props.filter : "brightness(80%)"};
   }
 
   &:active {
@@ -56,3 +54,6 @@ export default css`
       props.activeBg ? props.activeBg : activeBackground};
   }
 `;
+
+// -webkit-filter: ${(props) =>
+//       props.filter ? props.filter : "brightness(80%)"};
