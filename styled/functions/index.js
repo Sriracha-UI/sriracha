@@ -7,7 +7,7 @@ export const getColor = (props, def) => ({
 });
 
 export const getBackground = (props, def) => ({
-  color: !props.bg
+  background: !props.bg
     ? def
     : props.theme.colors[props.bg]
     ? props.theme.colors[props.bg]
@@ -23,7 +23,7 @@ export const getHvrColor = (props, def) => ({
 });
 
 export const getHvrBackground = (props, def) => ({
-  color: !props.hvrBg
+  background: !props.hvrBg
     ? def
     : props.theme.colors[props.hvrBg]
     ? props.theme.colors[props.hvrBg]
@@ -39,7 +39,7 @@ export const getTooltipColor = (props, def) => ({
 });
 
 export const getTooltipBackground = (props, def) => ({
-  color: !props.ttBg
+  background: !props.ttBg
     ? def
     : props.theme.colors[props.ttBg]
     ? props.theme.colors[props.ttBg]
