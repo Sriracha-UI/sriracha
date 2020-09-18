@@ -3,7 +3,7 @@ import { cursorStyle, boxShadow, hoverShadow } from "../../../maps";
 
 export default css`
   // color: ${(props) => (props.color ? props.color : "auto")};
-  color: ${(props) => (!props.color ? cardColor : props.theme[props.color])};
+  color: ${(props) => (!props.color ? "auto" : props.theme[props.color])};
   background: ${(props) => (props.bg ? props.bg : "auto")};
   border: ${(props) => (props.border ? props.border : "none")};
   border-radius: ${(props) => (props.radius ? props.radius : "0.1rem")};
