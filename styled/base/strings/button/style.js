@@ -40,7 +40,7 @@ export default css`
         : props.hvrColor};
     background: ${(props) =>
       !props.hvrBg
-        ? "brightness(0.6)"
+        ? rgba(buttonHoverBackground, 1.5)
         : props.theme.colors[props.hvrBg]
         ? props.theme.colors[props.hvrBg]
         : props.hvrBg};
