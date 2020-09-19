@@ -1,5 +1,6 @@
 import { css } from "styled-components";
 import { sideways, cardMarg, cardPad } from "../../../maps";
+import { getWidth } from "../../../functions";
 
 export default css`
   height: ${(props) =>
@@ -8,12 +9,13 @@ export default css`
       : props.theme.space[props.h]
       ? props.theme.space[props.h]
       : props.h};
-  width: ${(props) =>
+  /* width: ${(props) =>
     !props.w
       ? sideways
       : props.theme.space[props.w]
       ? props.theme.space[props.w]
-      : props.w};
+      : props.w}; */
+  ${getWidth(props, sideways)}
   max-height: ${(props) =>
     !props.maxH
       ? "none"

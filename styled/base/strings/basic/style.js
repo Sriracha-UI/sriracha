@@ -32,7 +32,8 @@ export default css`
         : props.theme.colors[props.hvrBg]
         ? props.theme.colors[props.hvrBg]
         : props.hvrBg};
-    border: ${(props) => (props.hvrBorder ? props.hvrBorder : "none")};
+    border: ${(props) =>
+      props.hvrBorder ? props.hvrBorder : props.border ? props.border : "none"};
     box-shadow: ${(props) => (props.hvrShadow ? props.hvrShadow : hoverShadow)};
     cursor: ${cursorStyle};
   }
