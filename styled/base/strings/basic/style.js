@@ -15,7 +15,11 @@ export default css`
       ? props.theme.colors[props.bg]
       : props.bg};
   border: ${(props) => (props.border ? props.border : "none")};
-  border-radius: ${(props) => (props.radius ? props.radius : "0.1rem")};
+  border-style: ${(props) => (props.bs ? props.bs : "none")};
+  border-width: ${(props) => (props.bw ? props.bw : "none")};
+  border-color: ${(props) => (props.bc ? props.bc : "none")};
+  border-radius: ${(props) =>
+    props.radius ? props.radius : props.theme.borderRadius};
   opacity: ${(props) => (props.opacity ? props.opacity : "none")};
   box-shadow: ${(props) => (props.shadow ? props.shadow : boxShadow)};
 

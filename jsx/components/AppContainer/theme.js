@@ -24,9 +24,7 @@ export const nickNacks = {
     "4",
   ],
   zIndex: [0, 500, 1000, 1500, 2000, 2500],
-  shape: {
-    borderRadius: "0.4rem",
-  },
+  borderRadius: "0.4rem",
   breakpoints: {
     xs: 0,
     sm: 600,
