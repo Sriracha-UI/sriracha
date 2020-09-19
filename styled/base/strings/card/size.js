@@ -15,7 +15,7 @@ export default css`
       : props.theme.space[props.w]
       ? props.theme.space[props.w]
       : props.w}; */
-  ${getWidth(props, sideways)}
+  ${(props) => getWidth(props, sideways)}
   max-height: ${(props) =>
     !props.maxH
       ? "none"
