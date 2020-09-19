@@ -9,6 +9,7 @@ export const nickNacks = {
     "12.8rem",
     "25.6rem",
     "51.2rem",
+    "88rem",
   ],
   shadows: {
     0: "none",
