@@ -9,6 +9,7 @@ export { theme } from "./styled/theme";
 import { useModal } from "./jsx/hooks/useModal";
 import { useCabinet } from "./jsx/hooks/useCabinet";
 import { useDarkMode } from "./jsx/hooks/useDarkMode";
+import { useToggleTheme } from "./jsx/hooks/useToggleTheme";
 
 // jsx components
 import Modal from "./jsx/components/Modal";
@@ -30,6 +31,7 @@ export {
   useModal,
   useCabinet,
   useDarkMode,
+  useToggleTheme,
   ThemeContext,
   Modal,
   Cabinet,
