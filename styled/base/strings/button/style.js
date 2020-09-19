@@ -8,7 +8,7 @@ import {
   boxShadow,
   hoverShadow,
   activeBackground,
-  buttonRadius,
+  // buttonRadius,
 } from "../../../maps";
 
 export default css`
@@ -25,9 +25,23 @@ export default css`
       ? props.theme.colors[props.bg]
       : props.bg};
   border: ${(props) => (props.border ? props.border : "none")};
-  border-radius: ${(props) => (props.radius ? props.radius : buttonRadius)};
+  border-style: ${(props) => (props.bs ? props.bs : "auto")};
+  border-width: ${(props) => (props.bw ? props.bw : "auto")};
+  border-radius: ${(props) =>
+    props.radius ? props.radius : props.theme.borderRadius};
+  border-color: ${(props) =>
+    props.theme.colors[props.bc]
+      ? props.theme.colors[props.bc]
+      : props.bc
+      ? props.bc
+      : "auto"};
   opacity: ${(props) => (props.opacity ? props.opacity : "none")};
-  box-shadow: ${(props) => (props.shadow ? props.shadow : boxShadow)};
+  box-shadow: ${(props) =>
+    props.theme.shadow[props.shadow]
+      ? props.theme.shadow[props.shadow]
+      : props.shadow
+      ? props.shadow
+      : boxShadow};
 
   transition: color 0.5s, background 0.5s, box-shadow 0.5s;
 
@@ -46,7 +60,26 @@ export default css`
         : props.hvrBg};
     border: ${(props) =>
       props.hvrBorder ? props.hvrBorder : props.border ? props.border : "none"};
-    box-shadow: ${(props) => (props.hvrShadow ? props.hvrShadow : hoverShadow)};
+    border-style: ${(props) =>
+      props.hvrBs ? props.hvrBs : props.bs ? props.bs : "auto"};
+    border-width: ${(props) =>
+      props.hvrBw ? props.hvrBw : props.bw ? props.bw : "auto"};
+    border-color: ${(props) =>
+      props.theme.colors[props.hvrBc]
+        ? props.theme.colors[props.hvrBc]
+        : props.hvrBc
+        ? props.hvrBc
+        : props.theme.colors[props.bc]
+        ? props.theme.colors[props.bc]
+        : props.bc
+        ? props.bc
+        : "auto"};
+    box-shadow: ${(props) =>
+      props.theme.shadow[props.hvrShadow]
+        ? props.theme.shadow[props.hvrShadow]
+        : props.hvrShadow
+        ? props.hvrShadow
+        : hoverShadow};
     cursor: ${buttonCursorStyle};
   }
 
