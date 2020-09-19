@@ -27,6 +27,8 @@ export default css`
   box-shadow: ${(props) => (props.shadow ? props.shadow : boxShadow)};
   text-align: ${textCenter};
 
+  transition: color 0.5s, background 0.5s, box-shadow 0.5s;
+
   &:hover {
     color: ${(props) =>
       !props.hvrColor
