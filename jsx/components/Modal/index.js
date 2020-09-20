@@ -50,10 +50,13 @@ const ModalWrapper = styled.div`
 
   .modal {
     z-index: 2000;
-    position: absolute;
-    margin: 1.75rem auto;
-    width: 100px;
-    top: ${(props) =>
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: ${(props) => (props.justify ? props.justify : center)};
+    align-items: ${(props) => (props.align ? props.align : center)};
+    /* top: ${(props) =>
       props.theme.space[props.mdt]
         ? props.theme.space[props.mdt]
         : props.mdt
@@ -76,7 +79,7 @@ const ModalWrapper = styled.div`
         ? props.theme.space[props.mdb]
         : props.mdb
         ? props.mdb
-        : "none"};
+        : "none"}; */
   }
 `;
 
