@@ -9,7 +9,7 @@ const Modal = ({ active, toggle, children, ...rest }) =>
         <ModalWrapper {...rest}>
           <Box className="container" aria-modal aria-hidden role="dialog">
             <div className="overlay" onClick={toggle} />
-            <Card className="modal">{children}</Card>
+            <div className="modal">{children}</div>
           </Box>
         </ModalWrapper>,
         document.body
@@ -73,10 +73,10 @@ const ModalWrapper = styled.div`
   .modal {
     z-index: 2000;
     position: relative;
-    margin: 1.75rem auto;
-    border-radius: 3px;
-    max-width: 500px;
-    padding: 2rem;
+    /* margin: 1.75rem auto; */
+    /* border-radius: 3px; */
+    /* max-width: 500px; */
+    /* padding: 2rem; */
   }
 `;
 
