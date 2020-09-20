@@ -27,8 +27,8 @@ export default css`
       : "auto"};
   opacity: ${(props) => (props.opacity ? props.opacity : "none")};
   box-shadow: ${(props) =>
-    props.theme.shadow[props.shadow]
-      ? props.theme.shadow[props.shadow]
+    props.theme.shadows[props.shadow]
+      ? props.theme.shadows[props.shadow]
       : props.shadow
       ? props.shadow
       : boxShadow};
@@ -63,8 +63,8 @@ export default css`
         ? props.bc
         : "auto"};
     box-shadow: ${(props) =>
-      props.theme.shadow[props.hvrShadow]
-        ? props.theme.shadow[props.hvrShadow]
+      props.theme.shadows[props.hvrShadow]
+        ? props.theme.shadows[props.hvrShadow]
         : props.hvrShadow
         ? props.hvrShadow
         : hoverShadow};
