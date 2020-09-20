@@ -4,10 +4,10 @@ import { ThemeProvider } from "styled-components";
 import { lightColors, darkColors, nickNacks } from "./theme";
 // import { useDarkMode } from "../../hooks/useDarkMode";
 import { GlobalStyles } from "../../../styled/components/GlobalStyles";
-import ToggleThemeProvider from "./ToggleThemeContext";
+import ThemeModeProvider from "./ThemeModeContext";
 
 export default function AppContainer({
-  theme,
+  themeString,
   toggleTheme,
   children,
   ...rest
@@ -22,13 +22,19 @@ export default function AppContainer({
     ...nickNacks,
   };
 
-  const themeMode = theme === "light" ? lightTheme : darkTheme;
+  const themeMode = themeString === "light" ? lightTheme : darkTheme;
   return (
     <ThemeProvider theme={themeMode}>
-      <ToggleThemeProvider theme={theme} toggleTheme={toggleTheme}>
+      <ThemeModeProvider
+        themeString={themeString}
+        toggleTheme={toggleTheme}
+        theme={themeMode}
+        lightTheme={lightTheme}
+        darkTHeme={darkTheme}
+      >
         <GlobalStyles />
         <AppWrapper {...rest}>{children}</AppWrapper>
-      </ToggleThemeProvider>
+      </ThemeModeProvider>
     </ThemeProvider>
   );
 }
