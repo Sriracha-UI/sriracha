@@ -62,36 +62,36 @@ export const nickNacks = {
 };
 
 export const lightColors = {
-  primary: {
-    light: "#1976d2",
-    main: "rgb(71, 145, 219)",
-    dark: "rgb(17, 82, 147)",
-    text: "#fafafa",
-  },
-  secondary: {
-    light: "rgb(220, 0, 78)",
-    main: "rgb(227, 51, 113)",
-    dark: "rgb(154, 0, 54)",
-    text: "#fafafa",
-  },
-  success: {
-    light: "#4caf50",
-    main: "#81c784",
-    dark: "#388e3c",
-    text: "#fafafa",
-  },
-  warning: {
-    light: "#ff9800",
-    main: "#ffb74d",
-    dark: "#f57c00",
-    text: "#fafafa",
-  },
-  info: {
-    light: "#2196f3",
-    main: "#64b5f6",
-    dark: "#1976d2",
-    text: "#fafafa",
-  },
+  // primary: {
+  //   light: "#1976d2",
+  //   main: "rgb(71, 145, 219)",
+  //   dark: "rgb(17, 82, 147)",
+  //   text: "#fafafa",
+  // },
+  // secondary: {
+  //   light: "rgb(220, 0, 78)",
+  //   main: "rgb(227, 51, 113)",
+  //   dark: "rgb(154, 0, 54)",
+  //   text: "#fafafa",
+  // },
+  // success: {
+  //   light: "#4caf50",
+  //   main: "#81c784",
+  //   dark: "#388e3c",
+  //   text: "#fafafa",
+  // },
+  // warning: {
+  //   light: "#ff9800",
+  //   main: "#ffb74d",
+  //   dark: "#f57c00",
+  //   text: "#fafafa",
+  // },
+  // info: {
+  //   light: "#2196f3",
+  //   main: "#64b5f6",
+  //   dark: "#1976d2",
+  //   text: "#fafafa",
+  // },
 
   gray0: "#FAFAFA",
   gray1: "#F5F5F5",
@@ -392,36 +392,36 @@ export const lightColors = {
 };
 
 export const darkColors = {
-  primary: {
-    light: "#1976d2",
-    main: "rgb(71, 145, 219)",
-    dark: "rgb(17, 82, 147)",
-    text: "#fafafa",
-  },
-  secondary: {
-    light: "rgb(220, 0, 78)",
-    main: "rgb(227, 51, 113)",
-    dark: "rgb(154, 0, 54)",
-    text: "#fafafa",
-  },
-  success: {
-    light: "#4caf50",
-    main: "#81c784",
-    dark: "#388e3c",
-    text: "#fafafa",
-  },
-  warning: {
-    light: "#ff9800",
-    main: "#ffb74d",
-    dark: "#f57c00",
-    text: "#fafafa",
-  },
-  info: {
-    light: "#2196f3",
-    main: "#64b5f6",
-    dark: "#1976d2",
-    text: "#fafafa",
-  },
+  // primary: {
+  //   light: "#1976d2",
+  //   main: "rgb(71, 145, 219)",
+  //   dark: "rgb(17, 82, 147)",
+  //   text: "#fafafa",
+  // },
+  // secondary: {
+  //   light: "rgb(220, 0, 78)",
+  //   main: "rgb(227, 51, 113)",
+  //   dark: "rgb(154, 0, 54)",
+  //   text: "#fafafa",
+  // },
+  // success: {
+  //   light: "#4caf50",
+  //   main: "#81c784",
+  //   dark: "#388e3c",
+  //   text: "#fafafa",
+  // },
+  // warning: {
+  //   light: "#ff9800",
+  //   main: "#ffb74d",
+  //   dark: "#f57c00",
+  //   text: "#fafafa",
+  // },
+  // info: {
+  //   light: "#2196f3",
+  //   main: "#64b5f6",
+  //   dark: "#1976d2",
+  //   text: "#fafafa",
+  // },
 
   gray0: "#212121",
   gray1: "#424242",
