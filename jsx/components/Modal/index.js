@@ -9,8 +9,10 @@ const Modal = ({ active, toggle, children, ...rest }) =>
     ? ReactDOM.createPortal(
         <ModalWrapper {...rest}>
           <Box className="container" aria-modal aria-hidden role="dialog">
-            <div className="overlay" onClick={toggle} />
-            <div className="modal">{children}</div>
+            <div className="overlay" />
+            <div className="modal" onClick={toggle}>
+              {children}
+            </div>
           </Box>
         </ModalWrapper>,
         document.body
@@ -36,8 +38,9 @@ const ModalWrapper = styled.div`
 
   .container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: ${(props) =>
+      props.justify ? props.justify : justifyCenter};
+    align-items: ${(props) => (props.align ? props.align : centerAlign)};
     position: fixed;
     top: 0;
     left: 0;
@@ -52,12 +55,6 @@ const ModalWrapper = styled.div`
   .modal {
     z-index: 2000;
     position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: ${(props) =>
-      props.justify ? props.justify : justifyCenter};
-    align-items: ${(props) => (props.align ? props.align : centerAlign)};
   }
 `;
 
