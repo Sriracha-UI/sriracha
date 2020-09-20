@@ -53,7 +53,7 @@ export const nickNacks = {
     "3xl": "2.8rem",
     "4xl": "3.2rem",
     "5xl": "3.6rem",
-    "6xl": "4",
+    "6xl": "4rem",
   },
   zIndex: [0, 500, 1000, 1500, 2000, 2500],
   borderRadius: "0.4rem",
