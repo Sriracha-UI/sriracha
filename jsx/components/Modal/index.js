@@ -50,20 +50,21 @@ const ModalWrapper = styled.div`
 
   .modal {
     z-index: 2000;
-    position: relative;
+    position: absolute;
     margin: 1.75rem auto;
+    width: 100px;
     top: ${(props) =>
       props.theme.space[props.mdt]
         ? props.theme.space[props.mdt]
         : props.mdt
         ? props.mdt
-        : "none"};
+        : 0};
     left: ${(props) =>
       props.theme.space[props.mdl]
         ? props.theme.space[props.mdl]
         : props.mdl
         ? props.mdl
-        : "none"};
+        : 0};
     right: ${(props) =>
       props.theme.space[props.mdr]
         ? props.theme.space[props.mdr]
