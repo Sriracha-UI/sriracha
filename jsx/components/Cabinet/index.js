@@ -11,7 +11,7 @@ const Cabinet = ({ active, toggle, children, ...rest }) => (
     <Card
       {...rest}
       className={`cabinet ${active ? "active" : "in-active"}`}
-      radius="0 0.4rem 0 0.4rem"
+      radius="0 0.4rem 0.4rem 0"
     >
       {children}
     </Card>
