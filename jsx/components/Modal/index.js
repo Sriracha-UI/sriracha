@@ -8,7 +8,13 @@ const Modal = ({ active, toggle, children, ...rest }) =>
   active
     ? ReactDOM.createPortal(
         <ModalWrapper {...rest}>
-          <Box className="container" aria-modal aria-hidden role="dialog">
+          <Box
+            className="container"
+            aria-modal
+            aria-hidden
+            role="dialog"
+            radius="0"
+          >
             <div className="overlay" onClick={toggle} />
             <div className="modal">{children}</div>
           </Box>
@@ -49,7 +55,6 @@ const ModalWrapper = styled.div`
     overflow-x: hidden;
     overflow-y: auto;
     outline: 0;
-    border-radius: 0;
   }
 
   .modal {
