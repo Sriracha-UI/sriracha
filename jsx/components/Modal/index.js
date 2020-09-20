@@ -73,7 +73,7 @@ const ModalWrapper = styled.div`
   .modal {
     z-index: 2000;
     position: relative;
-    /* margin: 1.75rem auto; */
+    margin: 1.75rem auto;
     /* border-radius: 3px; */
     /* max-width: 500px; */
     /* padding: 2rem; */
