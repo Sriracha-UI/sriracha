@@ -296,35 +296,37 @@ export const theme = {
     blackAlpha8: "rgba(0, 0, 0, 0.80)",
     blackAlpha9: "rgba(0, 0, 0, 0.92)",
   },
-  primary: {
-    light: "#1976d2",
-    main: "rgb(71, 145, 219)",
-    dark: "rgb(17, 82, 147)",
-    text: "#fafafa",
-  },
-  secondary: {
-    light: "rgb(220, 0, 78)",
-    main: "rgb(227, 51, 113)",
-    dark: "rgb(154, 0, 54)",
-    text: "#fafafa",
-  },
-  success: {
-    light: "#4caf50",
-    main: "#81c784",
-    dark: "#388e3c",
-    text: "#fafafa",
-  },
-  warning: {
-    light: "#ff9800",
-    main: "#ffb74d",
-    dark: "#f57c00",
-    text: "#fafafa",
-  },
-  info: {
-    light: "#2196f3",
-    main: "#64b5f6",
-    dark: "#1976d2",
-    text: "#fafafa",
+  palette: {
+    primary: {
+      light: "#1976d2",
+      main: "rgb(71, 145, 219)",
+      dark: "rgb(17, 82, 147)",
+      text: "#fafafa",
+    },
+    secondary: {
+      light: "rgb(220, 0, 78)",
+      main: "rgb(227, 51, 113)",
+      dark: "rgb(154, 0, 54)",
+      text: "#fafafa",
+    },
+    success: {
+      light: "#4caf50",
+      main: "#81c784",
+      dark: "#388e3c",
+      text: "#fafafa",
+    },
+    warning: {
+      light: "#ff9800",
+      main: "#ffb74d",
+      dark: "#f57c00",
+      text: "#fafafa",
+    },
+    info: {
+      light: "#2196f3",
+      main: "#64b5f6",
+      dark: "#1976d2",
+      text: "#fafafa",
+    },
   },
   shadows: {
     0: "none",
