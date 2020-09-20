@@ -16,6 +16,7 @@ import Modal from "./jsx/components/Modal";
 import Cabinet from "./jsx/components/Cabinet";
 import AppContainer from "./jsx/components/AppContainer";
 import ToggleTheme from "./jsx/components/ToggleTheme";
+import Img from "./jsx/components/Img";
 
 import styled, {
   ServerStyleSheet,
@@ -26,6 +27,7 @@ import styled, {
 
 // exports
 export {
+  Img,
   ThemeWrapper,
   withTheme,
   useModal,
