@@ -4,13 +4,13 @@ import { textAlign, fSize, fontWeight } from "../../../maps";
 export default css`
   font-family: ${(props) => (props.font ? props.font : "inherit")};
   font-size: ${(props) =>
-    !props.fontSize
+    !props.size
       ? fSize
-      : props.theme.fontSizes[props.fontSize]
-      ? props.theme.fontSizes[props.fontSize]
-      : props.fontSize};
+      : props.theme.fontSizes[props.size]
+      ? props.theme.fontSizes[props.size]
+      : props.size};
   font-weight: ${(props) => (props.weight ? props.weight : fontWeight)};
-  text-decoration: ${(props) => (props.textDec ? props.textDec : "none")};
+  text-decoration: ${(props) => (props.decoration ? props.decoration : "none")};
   text-align: ${textAlign};
   h1,
   h2,
