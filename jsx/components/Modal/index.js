@@ -9,7 +9,9 @@ const Modal = ({ active, toggle, children }) =>
         <ModalWrapper>
           <Box className="container" aria-modal aria-hidden role="dialog">
             <div className="overlay" onClick={toggle} />
-            <Card className="modal">{children}</Card>
+            <Card className="modal" bg="gray1">
+              {children}
+            </Card>
           </Box>
         </ModalWrapper>,
         document.body
