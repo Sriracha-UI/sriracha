@@ -38,30 +38,8 @@ const ModalWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     position: fixed;
-    top: ${(props) =>
-      props.theme.space[props.mt]
-        ? props.theme.space[props.mt]
-        : props.mt
-        ? props.mt
-        : 0};
-    left: ${(props) =>
-      props.theme.space[props.ml]
-        ? props.theme.space[props.ml]
-        : props.ml
-        ? props.ml
-        : 0};
-    right: ${(props) =>
-      props.theme.space[props.mr]
-        ? props.theme.space[props.mr]
-        : props.mr
-        ? props.mr
-        : "none"};
-    bottom: ${(props) =>
-      props.theme.space[props.mb]
-        ? props.theme.space[props.mb]
-        : props.mb
-        ? props.mb
-        : "none"};
+    top: 0;
+    left: 0;
     z-index: 1050;
     width: 100vw;
     height: 100vh;
@@ -74,9 +52,30 @@ const ModalWrapper = styled.div`
     z-index: 2000;
     position: relative;
     margin: 1.75rem auto;
-    /* border-radius: 3px; */
-    /* max-width: 500px; */
-    /* padding: 2rem; */
+    top: ${(props) =>
+      props.theme.space[props.mdt]
+        ? props.theme.space[props.mdt]
+        : props.mdt
+        ? props.mdt
+        : "none"};
+    left: ${(props) =>
+      props.theme.space[props.mdl]
+        ? props.theme.space[props.mdl]
+        : props.mdl
+        ? props.mdl
+        : "none"};
+    right: ${(props) =>
+      props.theme.space[props.mdr]
+        ? props.theme.space[props.mdr]
+        : props.mdr
+        ? props.mdr
+        : "none"};
+    bottom: ${(props) =>
+      props.theme.space[props.mdb]
+        ? props.theme.space[props.mdb]
+        : props.mdb
+        ? props.mdb
+        : "none"};
   }
 `;
 
