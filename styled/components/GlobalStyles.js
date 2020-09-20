@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
+  @import url("https://fonts.googleapis.com/css?family=Space+Mono|Bellota|Ubuntu+Mono|Open+Sans|Ubuntu&display=swap");
   *,
   *::after,
   *::before {
@@ -419,9 +420,6 @@ export const GlobalStyles = createGlobalStyle`
   [hidden] {
     display: none;
   }
-
-  @import url("https://fonts.googleapis.com/css?family=Space+Mono&display=swap");
-  @import url("https://fonts.googleapis.com/css?family=Bellota|Ubuntu+Mono|Open+Sans|Ubuntu&display=swap");
 
   /*
     Markdown CSS
