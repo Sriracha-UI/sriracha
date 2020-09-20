@@ -54,8 +54,8 @@ const ModalWrapper = styled.div`
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: ${(props) => (props.justify ? props.justify : center)};
-    align-items: ${(props) => (props.align ? props.align : center)};
+    justify-content: ${(props) => (props.justify ? props.justify : "center")};
+    align-items: ${(props) => (props.align ? props.align : "center")};
     /* top: ${(props) =>
       props.theme.space[props.mdt]
         ? props.theme.space[props.mdt]
