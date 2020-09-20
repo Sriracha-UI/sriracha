@@ -3,10 +3,10 @@ import ReactDOM from "react-dom";
 import styled from "styled-components";
 import { Card, Box, theme } from "../../../index";
 
-const Modal = ({ active, toggle, children }) =>
+const Modal = ({ active, toggle, children, ...rest }) =>
   active
     ? ReactDOM.createPortal(
-        <ModalWrapper>
+        <ModalWrapper {...rest}>
           <Box className="container" aria-modal aria-hidden role="dialog">
             <div className="overlay" onClick={toggle} />
             {children}
@@ -25,7 +25,12 @@ const ModalWrapper = styled.div`
     z-index: 1040;
     width: 100%;
     height: 100%;
-    background-color: ${theme.colors.blackAlpha8};
+    background: ${(props) =>
+      !props.obg
+        ? theme.colors.blackAlpha8
+        : props.theme.colors[props.obg]
+        ? props.theme.colors[props.obg]
+        : props.obg};
   }
 
   .container {
