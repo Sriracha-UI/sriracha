@@ -53,5 +53,6 @@ export { default as Button } from "./styled/components/Button";
 export { default as Card } from "./styled/components/Card";
 export { default as Box } from "./styled/components/Box";
 export { default as Hero } from "./styled/components/Hero";
+export { default as Span } from "./styled/components/Span";
 export { default as Text } from "./styled/components/Text";
 export { default as Tooltip } from "./styled/components/Tooltip";
