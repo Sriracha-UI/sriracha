@@ -30,7 +30,7 @@ export default function AppContainer({
         toggleTheme={toggleTheme}
         theme={themeMode}
         lightTheme={lightTheme}
-        darkTHeme={darkTheme}
+        darkTheme={darkTheme}
       >
         <GlobalStyles />
         <AppWrapper {...rest}>{children}</AppWrapper>
