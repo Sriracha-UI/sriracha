@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import styled from "styled-components";
-import { Card, Box, theme } from "../../../index";
+import { Box, theme } from "../../../index";
+import { centerAlign, justifyCenter } from "../../../styled/maps";
 
 const Modal = ({ active, toggle, children, ...rest }) =>
   active
@@ -54,32 +55,9 @@ const ModalWrapper = styled.div`
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: ${(props) => (props.justify ? props.justify : "center")};
-    align-items: ${(props) => (props.align ? props.align : "center")};
-    /* top: ${(props) =>
-      props.theme.space[props.mdt]
-        ? props.theme.space[props.mdt]
-        : props.mdt
-        ? props.mdt
-        : 0};
-    left: ${(props) =>
-      props.theme.space[props.mdl]
-        ? props.theme.space[props.mdl]
-        : props.mdl
-        ? props.mdl
-        : 0};
-    right: ${(props) =>
-      props.theme.space[props.mdr]
-        ? props.theme.space[props.mdr]
-        : props.mdr
-        ? props.mdr
-        : "none"};
-    bottom: ${(props) =>
-      props.theme.space[props.mdb]
-        ? props.theme.space[props.mdb]
-        : props.mdb
-        ? props.mdb
-        : "none"}; */
+    justify-content: ${(props) =>
+      props.justify ? props.justify : justifyCenter};
+    align-items: ${(props) => (props.align ? props.align : centerAlign)};
   }
 `;
 

@@ -14,6 +14,7 @@ export { default as centerAlign } from "./styles/flex/alignCenter";
 export { default as columnDirection } from "./styles/flex/directionColumn";
 export { default as flexDirection } from "./styles/flex/direction";
 export { default as flexJustify } from "./styles/flex/justify";
+export { default as justifyCenter } from "./styles/flex/justifyCenter";
 export { default as flexItems } from "./styles/flex/align";
 export { default as flexContent } from "./styles/flex/content";
 export { default as flexWrap } from "./styles/flex/flexWrap";
