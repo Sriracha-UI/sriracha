@@ -12,13 +12,4 @@ export default css`
   font-weight: ${(props) => (props.weight ? props.weight : fontWeight)};
   text-decoration: ${(props) => (props.decoration ? props.decoration : "none")};
   text-align: ${textAlign};
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: ${(props) =>
-      props.headFont ? props.headFont : props.font ? props.font : "inherit"};
-  }
 `;

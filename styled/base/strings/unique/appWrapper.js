@@ -1,6 +1,5 @@
 import { css } from "styled-components";
 import { marg, pad } from "../../../maps";
-import { getBackground } from "../../../functions";
 
 export default css`
   color: ${(props) =>
@@ -25,13 +24,13 @@ export default css`
   max-height: ${(props) => (props.maxH ? props.maxH : "none")};
   margin: ${(props) => (props.m ? props.m : marg)};
   padding: ${(props) => (props.p ? props.p : pad)};
-  h1,
+  /* h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
     font-family: ${(props) =>
-      props.headFont ? props.headFont : '"Open Sans", cursive'};
-  }
+    props.headFont ? props.headFont : '"Open Sans", cursive'};
+  } */
 `;
