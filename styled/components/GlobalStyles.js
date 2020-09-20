@@ -78,7 +78,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   html body img {
-    border-radius: 0.4rem;
+    border-radius: ${(props) => props.theme.borderRadius};
   }
 
   /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

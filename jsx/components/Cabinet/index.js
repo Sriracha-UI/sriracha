@@ -8,7 +8,11 @@ const Cabinet = ({ active, toggle, children, ...rest }) => (
       className={`overlay-${active ? "active" : "in-active"}`}
       onClick={toggle}
     />
-    <Card {...rest} className={`cabinet ${active ? "active" : "in-active"}`}>
+    <Card
+      {...rest}
+      className={`cabinet ${active ? "active" : "in-active"}`}
+      radius="0 0.4rem 0 0.4rem"
+    >
       {children}
     </Card>
   </CabinetWrapper>
