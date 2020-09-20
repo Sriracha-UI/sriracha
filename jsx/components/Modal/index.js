@@ -26,6 +26,7 @@ const ModalWrapper = styled.div`
     z-index: 1040;
     width: 100%;
     height: 100%;
+    border-radius: 0;
     background: ${(props) =>
       !props.obg
         ? theme.colors.blackAlpha8
