@@ -49,6 +49,7 @@ const ModalWrapper = styled.div`
     overflow-x: hidden;
     overflow-y: auto;
     outline: 0;
+    border-radius: 0;
   }
 
   .modal {
