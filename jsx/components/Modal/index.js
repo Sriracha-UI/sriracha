@@ -9,9 +9,7 @@ const Modal = ({ active, toggle, children }) =>
         <ModalWrapper>
           <Box className="container" aria-modal aria-hidden role="dialog">
             <div className="overlay" onClick={toggle} />
-            <Card className="modal" bg="gray1">
-              {children}
-            </Card>
+            {children}
           </Box>
         </ModalWrapper>,
         document.body
@@ -35,8 +33,30 @@ const ModalWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: ${(props) =>
+      props.theme.space[props.mt]
+        ? props.theme.space[props.mt]
+        : props.mt
+        ? props.mt
+        : 0};
+    left: ${(props) =>
+      props.theme.space[props.ml]
+        ? props.theme.space[props.ml]
+        : props.ml
+        ? props.ml
+        : 0};
+    right: ${(props) =>
+      props.theme.space[props.mr]
+        ? props.theme.space[props.mr]
+        : props.mr
+        ? props.mr
+        : "none"};
+    bottom: ${(props) =>
+      props.theme.space[props.mb]
+        ? props.theme.space[props.mb]
+        : props.mb
+        ? props.mb
+        : "none"};
     z-index: 1050;
     width: 100vw;
     height: 100vh;
