@@ -17,6 +17,7 @@ import Cabinet from "./jsx/components/Cabinet";
 import AppContainer from "./jsx/components/AppContainer";
 import ToggleTheme from "./jsx/components/ToggleTheme";
 import Img from "./jsx/components/Img";
+import HighlightedMarkdown from "./jsx/components/HighlightedMarkdown";
 
 import styled, {
   ServerStyleSheet,
@@ -39,6 +40,7 @@ export {
   Cabinet,
   ServerStyleSheet,
   AppContainer,
+  HighlightedMarkdown,
   ToggleTheme,
   styled,
   css,
