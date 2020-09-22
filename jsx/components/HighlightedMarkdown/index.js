@@ -41,7 +41,7 @@ const Container = styled.div`
     overflow-x: auto;
     padding: 0.5em;
     color: var(--mono-1);
-    background: var(--base);
+    background: rgb(38, 50, 56);
     width: 96%;
     border-radius: 0.4rem;
   }
