@@ -141,7 +141,7 @@ export const GlobalStyles = createGlobalStyle`
    * 2. Correct the odd "em" font sizing in all browsers.
    */
   pre {
-    font-family: "Ubuntu Mono", monospace;
+    font-family: "Space Mono", monospace;
     /* 1 */
     font-size: 1em;
     /* 2 */
@@ -489,7 +489,7 @@ export const GlobalStyles = createGlobalStyle`
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     line-height: 1.5;
-    color: #24292e;
+    color: ${(props) => props.theme.gray9};
     font-family: inherit;
     font-size: 16px;
     line-height: 1.5;
@@ -566,7 +566,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .markdown-body a {
-    color: #0366d6;
+    color: ${(props) => props.theme.lightBlue5};
     text-decoration: none;
   }
 
@@ -584,7 +584,7 @@ export const GlobalStyles = createGlobalStyle`
     overflow: hidden;
     background: transparent;
     border: 0;
-    border-bottom: 1px solid #dfe2e5;
+    border-bottom: ${(props) => `1px solid ${props.theme.gray7}`};
   }
 
   .markdown-body hr:after,
