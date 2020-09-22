@@ -1,6 +1,6 @@
 {
   "name": "sriracha-ui",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "A react style library build with styled-components, and material ui theme.",
   "main": "dist/index",
   "scripts": {
@@ -34,6 +34,8 @@
   "dependencies": {
     "@callstack/react-theme-provider": "^2.1.0",
     "axios": "^0.20.0",
+    "highlight.js": "^10.2.0",
+    "markdown-to-jsx": "^7.0.0",
     "styled-components": "^5.0.1",
     "styled-map": "^3.3.0",
     "styled-system": "^5.1.5"
