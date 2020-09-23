@@ -5,14 +5,22 @@ export default css`
   height: ${(props) =>
     !props.h
       ? "auto"
-      : props.theme.space[props.h]
-      ? props.theme.space[props.h]
+      : props.theme.space[props.w]
+      ? props.theme.space[props.w]
+      : props.theme.space[props.sqr]
+      ? props.theme.space[props.sqr]
+      : props.sqr
+      ? props.sqr
       : props.h};
   width: ${(props) =>
     !props.w
       ? sideways
       : props.theme.space[props.w]
       ? props.theme.space[props.w]
+      : props.theme.space[props.sqr]
+      ? props.theme.space[props.sqr]
+      : props.sqr
+      ? props.sqr
       : props.w};
   max-height: ${(props) =>
     !props.maxH
