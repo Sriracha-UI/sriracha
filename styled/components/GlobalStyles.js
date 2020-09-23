@@ -584,7 +584,7 @@ export const GlobalStyles = createGlobalStyle`
     overflow: hidden;
     background: transparent;
     border: 0;
-    border-bottom: ${(props) => `1px solid ${props.theme.colors.gray7}`};
+    border-bottom: ${(props) => `1px solid ${props.theme.colors.gray8}`};
   }
 
   .markdown-body hr:after,
@@ -619,7 +619,7 @@ export const GlobalStyles = createGlobalStyle`
     color: #444d56;
     vertical-align: middle;
     background-color: #fafbfc;
-    border: 1px solid #d1d5da;
+    border: ${(props) => `1px solid ${props.theme.colors.gray8}`};
     border-radius: 3px;
     box-shadow: inset 0 -1px 0 #d1d5da;
   }
@@ -734,7 +734,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .markdown-body .border {
-    border: 1px solid #e1e4e8 !important;
+    border: ${(props) => `1px solid ${props.theme.colors.gray8}`} !important;
   }
 
   .markdown-body .border-0 {
@@ -742,7 +742,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .markdown-body .border-bottom {
-    border-bottom: 1px solid #e1e4e8 !important;
+    border-bottom: ${(props) =>
+      `1px solid ${props.theme.colors.gray8}`} !important;
   }
 
   .markdown-body .rounded-1 {
@@ -1035,7 +1036,7 @@ export const GlobalStyles = createGlobalStyle`
     color: #444d56;
     vertical-align: middle;
     background-color: #fafbfc;
-    border: 1px solid #d1d5da;
+    border: ${(props) => `1px solid ${props.theme.colors.gray8}`};
     border-radius: 3px;
     box-shadow: inset 0 -1px 0 #d1d5da;
   }
@@ -1116,7 +1117,7 @@ export const GlobalStyles = createGlobalStyle`
   .markdown-body h1,
   .markdown-body h2 {
     padding-bottom: 0.3em;
-    border-bottom: 1px solid #eaecef;
+    border-bottom: ${(props) => `1px solid ${props.theme.colors.gray8}`};
   }
 
   .markdown-body h2 {
@@ -1221,7 +1222,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .markdown-body code {
-    padding: 0.01em 0.4em;
+    padding: 0.4rem;
     margin: 0;
     font-size: 1.4rem;
     font-family: "Space Mono", monospace;
