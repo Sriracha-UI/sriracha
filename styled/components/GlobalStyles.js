@@ -619,7 +619,7 @@ export const GlobalStyles = createGlobalStyle`
     color: #444d56;
     vertical-align: middle;
     background-color: #fafbfc;
-    border: ${(props) => `1px solid ${props.theme.colors.gray6}`};
+    border: ${(props) => `1px solid ${props.theme.colors.gray5}`};
     border-radius: 3px;
     box-shadow: inset 0 -1px 0 #d1d5da;
   }
@@ -734,7 +734,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .markdown-body .border {
-    border: ${(props) => `1px solid ${props.theme.colors.gray6}`} !important;
+    border: ${(props) => `1px solid ${props.theme.colors.gray5}`} !important;
   }
 
   .markdown-body .border-0 {
@@ -743,7 +743,7 @@ export const GlobalStyles = createGlobalStyle`
 
   .markdown-body .border-bottom {
     border-bottom: ${(props) =>
-      `1px solid ${props.theme.colors.gray6}`} !important;
+      `1px solid ${props.theme.colors.gray5}`} !important;
   }
 
   .markdown-body .rounded-1 {
@@ -1036,7 +1036,7 @@ export const GlobalStyles = createGlobalStyle`
     color: #444d56;
     vertical-align: middle;
     background-color: #fafbfc;
-    border: ${(props) => `1px solid ${props.theme.colors.gray6}`};
+    border: ${(props) => `1px solid ${props.theme.colors.gray5}`};
     border-radius: 3px;
     box-shadow: inset 0 -1px 0 #d1d5da;
   }
@@ -1117,7 +1117,7 @@ export const GlobalStyles = createGlobalStyle`
   .markdown-body h1,
   .markdown-body h2 {
     padding-bottom: 0.3em;
-    border-bottom: ${(props) => `1px solid ${props.theme.colors.gray6}`};
+    border-bottom: ${(props) => `1px solid ${props.theme.colors.gray5}`};
   }
 
   .markdown-body h2 {
