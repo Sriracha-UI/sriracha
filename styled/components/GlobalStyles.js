@@ -584,7 +584,7 @@ export const GlobalStyles = createGlobalStyle`
     overflow: hidden;
     background: transparent;
     border: 0;
-    border-bottom: ${(props) => `1px solid ${props.theme.colors.gray6}`};
+    border-bottom: ${(props) => `1px solid ${props.theme.colors.gray5}`};
   }
 
   .markdown-body hr:after,
@@ -1234,7 +1234,6 @@ export const GlobalStyles = createGlobalStyle`
   .markdown-body pre code {
     font-size: 1.6rem;
     font-family: "Space Mono", monospace;
-    padding: 0.4rem;
   }
 
   /* .markdown-body pre > code {
