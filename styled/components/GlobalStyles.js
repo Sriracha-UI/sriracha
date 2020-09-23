@@ -584,7 +584,7 @@ export const GlobalStyles = createGlobalStyle`
     overflow: hidden;
     background: transparent;
     border: 0;
-    border-bottom: ${(props) => `1px solid ${props.theme.gray8}`};
+    border-bottom: ${(props) => `1px solid ${props.theme.colors.gray7}`};
   }
 
   .markdown-body hr:after,
