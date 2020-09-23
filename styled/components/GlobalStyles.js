@@ -584,7 +584,7 @@ export const GlobalStyles = createGlobalStyle`
     overflow: hidden;
     background: transparent;
     border: 0;
-    border-bottom: ${(props) => `1px solid ${props.theme.gray7}`};
+    border-bottom: ${(props) => `1px solid ${props.theme.gray8}`};
   }
 
   .markdown-body hr:after,
@@ -1225,7 +1225,8 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     font-size: 1.4rem;
     font-family: "Space Mono", monospace;
-    background-color: rgba(27, 31, 35, 0.05);
+    /* background-color: rgba(27, 31, 35, 0.05); */
+    background: ${(props) => props.theme.colors.gray4};
     border-radius: 3px;
   }
 
