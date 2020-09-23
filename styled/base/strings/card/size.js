@@ -3,17 +3,17 @@ import { sideways, cardMarg, cardPad } from "../../../maps";
 
 export default css`
   height: ${(props) =>
-    !props.h
+    !props.h && !props.sqr
       ? "auto"
-      : props.theme.space[props.w]
-      ? props.theme.space[props.w]
+      : props.theme.space[props.h]
+      ? props.theme.space[props.h]
       : props.theme.space[props.sqr]
       ? props.theme.space[props.sqr]
       : props.sqr
       ? props.sqr
       : props.h};
   width: ${(props) =>
-    !props.w
+    !props.w && !props.sqr
       ? sideways
       : props.theme.space[props.w]
       ? props.theme.space[props.w]
