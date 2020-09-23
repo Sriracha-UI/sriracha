@@ -1227,7 +1227,7 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 1.4rem;
     font-family: "Space Mono", monospace;
     /* background-color: rgba(27, 31, 35, 0.05); */
-    background: ${(props) => props.theme.colors.gray4};
+    background: ${(props) => props.theme.colors.gray3};
     border-radius: 3px;
   }
 
