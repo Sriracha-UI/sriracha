@@ -584,7 +584,7 @@ export const GlobalStyles = createGlobalStyle`
     overflow: hidden;
     background: transparent;
     border: 0;
-    border-bottom: ${(props) => `1px solid ${props.theme.colors.gray8}`};
+    border-bottom: ${(props) => `1px solid ${props.theme.colors.gray6}`};
   }
 
   .markdown-body hr:after,
@@ -619,7 +619,7 @@ export const GlobalStyles = createGlobalStyle`
     color: #444d56;
     vertical-align: middle;
     background-color: #fafbfc;
-    border: ${(props) => `1px solid ${props.theme.colors.gray8}`};
+    border: ${(props) => `1px solid ${props.theme.colors.gray6}`};
     border-radius: 3px;
     box-shadow: inset 0 -1px 0 #d1d5da;
   }
@@ -734,7 +734,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .markdown-body .border {
-    border: ${(props) => `1px solid ${props.theme.colors.gray8}`} !important;
+    border: ${(props) => `1px solid ${props.theme.colors.gray6}`} !important;
   }
 
   .markdown-body .border-0 {
@@ -743,7 +743,7 @@ export const GlobalStyles = createGlobalStyle`
 
   .markdown-body .border-bottom {
     border-bottom: ${(props) =>
-      `1px solid ${props.theme.colors.gray8}`} !important;
+      `1px solid ${props.theme.colors.gray6}`} !important;
   }
 
   .markdown-body .rounded-1 {
@@ -1036,7 +1036,7 @@ export const GlobalStyles = createGlobalStyle`
     color: #444d56;
     vertical-align: middle;
     background-color: #fafbfc;
-    border: ${(props) => `1px solid ${props.theme.colors.gray8}`};
+    border: ${(props) => `1px solid ${props.theme.colors.gray6}`};
     border-radius: 3px;
     box-shadow: inset 0 -1px 0 #d1d5da;
   }
@@ -1117,7 +1117,7 @@ export const GlobalStyles = createGlobalStyle`
   .markdown-body h1,
   .markdown-body h2 {
     padding-bottom: 0.3em;
-    border-bottom: ${(props) => `1px solid ${props.theme.colors.gray8}`};
+    border-bottom: ${(props) => `1px solid ${props.theme.colors.gray6}`};
   }
 
   .markdown-body h2 {
@@ -1222,7 +1222,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .markdown-body code {
-    padding: 0.4rem;
+    padding: 0.01em 0.4em;
     margin: 0;
     font-size: 1.4rem;
     font-family: "Space Mono", monospace;
@@ -1234,6 +1234,7 @@ export const GlobalStyles = createGlobalStyle`
   .markdown-body pre code {
     font-size: 1.6rem;
     font-family: "Space Mono", monospace;
+    padding: 0.4rem;
   }
 
   /* .markdown-body pre > code {
