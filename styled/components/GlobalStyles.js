@@ -1,11 +1,16 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-  /* @import url("https://fonts.googleapis.com/css?family=Space+Mono|Bellota|Ubuntu+Mono|Open+Sans|Ubuntu&display=swap"); */
+  @import url("https://fonts.googleapis.com/css?family=Space+Mono|Bellota|Ubuntu+Mono|Open+Sans|Ubuntu&display=swap");
   *,
   *::after,
   *::before {
     box-sizing: border-box;
+  }
+
+  button:disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
   }
 
   html {
