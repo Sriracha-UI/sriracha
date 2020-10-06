@@ -67,11 +67,11 @@ export const GlobalStyles = createGlobalStyle`
 
   html body a {
     text-decoration: none;
-    color: var(--blue6);
+    color: ${({ theme }) => theme.colors.blue6};
   }
 
   html body a:hover {
-    color: var(--blue7);
+    color: ${({ theme }) => theme.colors.blue7};
   }
 
   .hidden {
