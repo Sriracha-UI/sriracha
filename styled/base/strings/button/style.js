@@ -87,6 +87,11 @@ export default css`
     background: ${(props) =>
       props.activeBg ? props.activeBg : activeBackground};
   }
+
+  &[disabled] {
+    opacity: 0.2;
+    cursor: not-allowed;
+  }
 `;
 
 // -webkit-filter: ${(props) =>

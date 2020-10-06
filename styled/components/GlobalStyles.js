@@ -8,11 +8,6 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  button:disabled {
-    opacity: 0.2;
-    cursor: not-allowed;
-  }
-
   html {
     font-size: 62.5%;
     line-height: 1.4;
