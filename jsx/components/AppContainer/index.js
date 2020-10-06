@@ -32,7 +32,7 @@ export default function AppContainer({
         lightTheme={lightTheme}
         darkTheme={darkTheme}
       >
-        <GlobalStyles />
+        {/* <GlobalStyles /> */}
         <AppWrapper {...rest}>{children}</AppWrapper>
       </ThemeModeProvider>
     </ThemeProvider>
