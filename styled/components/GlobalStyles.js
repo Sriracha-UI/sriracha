@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-  @import url("https://fonts.googleapis.com/css?family=Space+Mono|Bellota|Ubuntu+Mono|Open+Sans|Ubuntu&display=swap");
+  /* @import url("https://fonts.googleapis.com/css?family=Space+Mono|Bellota|Ubuntu+Mono|Open+Sans|Ubuntu&display=swap"); */
   *,
   *::after,
   *::before {
