@@ -6,7 +6,7 @@ Sriracha UI is a design system built with accessability as the highest priority.
 
 ### Installing
 
-To install Sriracha UI to your project simply run `yarn add sriracha-ui` || `npm i sriracha-ui` and your ready to hook it up!
+To install Sriracha UI to your project simply run `yarn add sriracha-ui` || `npm i sriracha-ui` and you're ready to hook it up!
 
 ### CSS overhaul and AppWrapper
 
