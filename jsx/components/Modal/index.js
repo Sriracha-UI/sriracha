@@ -64,7 +64,7 @@ const ModalWrapper = styled.div`
     right: ${(props) => (props.right ? props.right : "auto")};
     bottom: ${(props) => (props.bottom ? props.bottom : "auto")};
     left: ${(props) => (props.left ? props.left : "50%")};
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
   }
 `;
 
