@@ -8,7 +8,7 @@ export default styledMap`
   colResize: col-resize;
   copy: copy;
   crosshair: crosshair;
-  // default: default;
+  def: default;
   eResize: e-resize;
   ewResize: ew-resize;
   grab: grab;
@@ -38,5 +38,6 @@ export default styledMap`
   zoomOut: zoom-out;
   initial: initial;
   inherit: inherit;
-  default: auto;
+  auto: auto;
+  default: inherit;
 `;

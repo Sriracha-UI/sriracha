@@ -5,10 +5,10 @@ export default css`
     visibility: hidden;
     opacity: 0;
     margin: ${(props) => (props.ttM ? props.ttM : "0")};
-    padding: ${(props) => (props.ttP ? props.ttP : "2rem")};
+    padding: ${(props) => (props.ttP ? props.ttP : "0")};
     width: ${(props) => (props.ttW ? props.ttW : "auto")};
     height: ${(props) => (props.ttH ? props.ttH : "auto")};
-    color: ${(props) =>
+    /* color: ${(props) =>
       !props.ttColor
         ? props.theme.colors.gray9
         : props.theme.colors[props.ttColor]
@@ -19,7 +19,7 @@ export default css`
         ? props.theme.colors.gray0
         : props.theme.colors[props.ttBg]
         ? props.theme.colors[props.ttBg]
-        : props.ttBg};
+        : props.ttBg}; */
     top: ${(props) => (props.ttTop ? props.ttTop : "none")};
     right: ${(props) => (props.ttRight ? props.ttRight : "none")};
     bottom: ${(props) => (props.ttBottom ? props.ttBottom : "none")};
