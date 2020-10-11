@@ -2,13 +2,13 @@ import React from "react";
 import AppWrapper from "../../../styled/components/AppWrapper";
 import { ThemeProvider } from "styled-components";
 import { lightColors, darkColors, nickNacks } from "./theme";
-// import { useDarkMode } from "../../hooks/useDarkMode";
+import { useDarkMode } from "../../hooks/useDarkMode";
 import { GlobalStyles } from "../../../styled/components/GlobalStyles";
 import ThemeModeProvider from "./ThemeModeContext";
 
 export default function AppContainer({
-  themeString,
-  toggleTheme,
+  // themeString,
+  // toggleTheme,
   children,
   ...rest
 }) {
@@ -23,6 +23,8 @@ export default function AppContainer({
   };
 
   const themeMode = themeString === "light" ? lightTheme : darkTheme;
+
+  const { themeString, toggleTheme } = useDarkMode();
   return (
     <ThemeProvider theme={themeMode}>
       <ThemeModeProvider
