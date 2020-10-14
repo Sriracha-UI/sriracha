@@ -2,18 +2,9 @@ import React from "react";
 
 export const ThemeModeContext = React.createContext([{}, () => {}]);
 
-export default function ThemeModeProvider({
-  toggleTheme,
-  theme,
-  themeString,
-  lightTheme,
-  darkTheme,
-  children,
-}) {
+export default function ThemeModeProvider({ theme, children }) {
   return (
-    <ThemeModeContext.Provider
-      value={{ toggleTheme, theme, themeString, lightTheme, darkTheme }}
-    >
+    <ThemeModeContext.Provider value={{ theme }}>
       {children}
     </ThemeModeContext.Provider>
   );

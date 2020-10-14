@@ -1,8 +1,4 @@
 // export theme stuff
-import ThemeWrapper from "./jsx/components/ThemeProvider";
-
-// import { withTheme, useTheme } from "./jsx/components/ThemeProvider";
-
 export { theme } from "./styled/theme";
 
 // export hooks
@@ -12,15 +8,16 @@ import { useDarkMode } from "./jsx/hooks/useDarkMode";
 import { useTheme } from "./jsx/hooks/useTheme";
 
 // jsx components
-import Modal from "./jsx/components/Modal";
-import Cabinet from "./jsx/components/Cabinet";
+import ColorModeWrapper from "./jsx/components/ColorModeWrapper";
 import AppContainer from "./jsx/components/AppContainer";
 import ToggleTheme from "./jsx/components/ToggleTheme";
+import Cabinet from "./jsx/components/Cabinet";
+import Modal from "./jsx/components/Modal";
 import Img from "./jsx/components/Img";
-// import HighlightedMarkdown from "./jsx/components/HighlightedMarkdown";
 
 import styled, {
   ServerStyleSheet,
+  ThemeProvider,
   ThemeContext,
   withTheme,
   css,
@@ -29,7 +26,7 @@ import styled, {
 // exports
 export {
   Img,
-  ThemeWrapper,
+  ThemeProvider,
   withTheme,
   useModal,
   useCabinet,
@@ -40,7 +37,7 @@ export {
   Cabinet,
   ServerStyleSheet,
   AppContainer,
-  // HighlightedMarkdown,
+  ColorModeWrapper,
   ToggleTheme,
   styled,
   css,
