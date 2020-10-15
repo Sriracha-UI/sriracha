@@ -566,7 +566,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .markdown-body a {
-    color: ${(props: Props) => props.theme.lightBlue5};
+    color: ${(props: Props) => props.theme.colors.lightBlue5};
     text-decoration: none;
   }
 

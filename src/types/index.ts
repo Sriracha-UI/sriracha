@@ -1,306 +1,306 @@
 export interface Props {
-  theme: any;
+  theme?: any;
 }
 
 export interface ColorProps extends Props {
-  color: string;
+  color?: string;
 }
 
 export interface ActiveBackgroundProps extends Props {
-  activeBg: string;
+  activeBg?: string;
 }
 
 export interface BackgroundProps extends Props {
-  bg: string;
+  bg?: string;
 }
 
 export interface BorderRadiusProps extends Props {
-  radius: string;
+  radius?: string;
 }
 
 export interface BorderProps extends Props {
-  border: string;
+  border?: string;
 }
 
 export interface BorderStyleProps extends Props {
-  bs: string;
+  bs?: string;
 }
 
 export interface BorderWidthProps extends Props {
-  bw: string;
+  bw?: string;
 }
 
 export interface BorderColorProps extends Props {
-  bc: string;
+  bc?: string;
 }
 
 export interface OpacityProps extends Props {
-  opacity: string;
+  opacity?: string;
 }
 
 export interface ShadowProps extends Props {
-  shadow: string;
+  shadow?: string;
 }
 
 export interface HvrShadowProps extends Props {
-  hvrShadow: string;
+  hvrShadow?: string;
 }
 
 export interface HvrColorProps extends Props {
-  hvrColor: string;
+  hvrColor?: string;
 }
 
 export interface HvrBgProps extends Props {
-  hvrBg: string;
+  hvrBg?: string;
 }
 
 export interface HvrBorderProps extends Props {
-  hvrBorder: string;
-  border: string;
+  hvrBorder?: string;
+  border?: string;
 }
 
 export interface HvrBsProps extends Props {
-  hvrBs: string;
-  bs: string;
-  bw: string;
+  hvrBs?: string;
+  bs?: string;
+  bw?: string;
 }
 
 export interface HvrBwProps extends Props {
-  hvrBw: string;
-  bw: string;
+  hvrBw?: string;
+  bw?: string;
 }
 
 export interface HvrBcProps extends Props {
-  hvrBc: string;
-  bc: string;
+  hvrBc?: string;
+  bc?: string;
 }
 
 export interface BcProps extends Props {
-  bc: string;
+  bc?: string;
 }
 
 // tooltip
 
 export interface TooltipMarginProps extends Props {
-  ttM: string;
+  ttM?: string;
 }
 
 export interface TooltipPaddingProps extends Props {
-  ttP: string;
+  ttP?: string;
 }
 
 export interface TooltipWidthProps extends Props {
-  ttW: string;
+  ttW?: string;
 }
 
 export interface TooltipHeightProps extends Props {
-  ttH: string;
+  ttH?: string;
 }
 
 export interface TooltipBorderRadiusProps extends Props {
-  ttRadius: string;
+  ttRadius?: string;
 }
 
 export interface ZIndexProps extends Props {
-  zIndex: string;
+  zIndex?: string;
 }
 
 // focus
 
 export interface FocusColorProps extends Props {
-  fcsColor: string;
+  fcsColor?: string;
 }
 
 export interface FocusBackgroundProps extends Props {
-  fcsBg: string;
+  fcsBg?: string;
 }
 
 export interface FocusBorderProps extends HvrBorderProps {
-  fcsBorder: string;
+  fcsBorder?: string;
 }
 
 export interface FocusBsProps extends HvrBsProps {
-  fcsBs: string;
+  fcsBs?: string;
 }
 
 export interface FocusBwProps extends HvrBwProps {
-  fcsBw: string;
+  fcsBw?: string;
 }
 
 export interface FocusBcProps extends HvrBcProps {
-  fcsBc: string;
+  fcsBc?: string;
 }
 
 export interface FocusShadowProps extends Props {
-  fcsShadow: string;
+  fcsShadow?: string;
 }
 
 // background props
 
 export interface BackgroundSourceProps extends Props {
-  bgSrc: string;
+  bgSrc?: string;
 }
 
 export interface BackgroundPositionProps extends Props {
-  bgPosition: string;
+  bgPosition?: string;
 }
 
 export interface BackgroundRepeatProps extends Props {
-  bgRepeat: string;
+  bgRepeat?: string;
 }
 
 export interface BackgroundAttachmentProps extends Props {
-  bgAttachment: string;
+  bgAttachment?: string;
 }
 
 export interface BackgroundSizeProps extends Props {
-  bgSize: string;
+  bgSize?: string;
 }
 
 export interface OpacityProps extends Props {
-  opacity: string;
+  opacity?: string;
 }
 
 // center align
 
 export interface FontProps extends Props {
-  font: string;
+  font?: string;
 }
 
 export interface FontSizeProps extends Props {
-  size: string;
+  size?: string;
 }
 
 export interface WeightProps extends Props {
-  weight: string;
+  weight?: string;
 }
 
 export interface TextDecorationProps extends Props {
-  decoration: string;
+  decoration?: string;
 }
 
 export interface TextAlignProps extends Props {
-  textAlign: string;
+  textAlign?: string;
 }
 
 // flex column
 
 export interface FlexWrapProps extends Props {
-  wrap: string;
+  wrap?: string;
 }
 
 export interface FlexDirectionProps extends Props {
-  direction: string;
+  direction?: string;
 }
 
 export interface JustifyContentProps extends Props {
-  justify: string;
+  justify?: string;
 }
 
 export interface AlignItemProps extends Props {
-  align: string;
+  align?: string;
 }
 
 export interface AlignContentProps extends Props {
-  content: string;
+  content?: string;
 }
 
 // position
 
 export interface PositionProps extends Props {
-  position: string;
+  position?: string;
 }
 
 export interface TopProps extends Props {
-  top: string;
+  top?: string;
 }
 
 export interface RightProps extends Props {
-  right: string;
+  right?: string;
 }
 
 export interface BottomProps extends Props {
-  bottom: string;
+  bottom?: string;
 }
 
 export interface LeftProps extends Props {
-  left: string;
+  left?: string;
 }
 
 // shape
 
 export interface OverFlowProps extends Props {
-  overflow: string;
+  overflow?: string;
 }
 
 export interface ClipProps extends Props {
-  clip: string;
+  clip?: string;
 }
 
 // size
 
 export interface HeightProps extends Props {
-  h: string;
-  sqr: string;
+  h?: string;
+  sqr?: string;
 }
 
 export interface WidthProps extends Props {
-  w: string;
-  sqr: string;
+  w?: string;
+  sqr?: string;
 }
 
 export interface MaxHeightProps extends Props {
-  maxH: string;
+  maxH?: string;
 }
 
 export interface MaxWidthProps extends Props {
-  maxW: string;
+  maxW?: string;
 }
 
 export interface MinHeightProps extends Props {
-  minH: string;
+  minH?: string;
 }
 
 export interface MinWidthProps extends Props {
-  minW: string;
+  minW?: string;
 }
 
 export interface MarginProps extends Props {
-  m: string;
+  m?: string;
 }
 
 export interface MarginTopProps extends Props {
-  mt: string;
+  mt?: string;
 }
 
 export interface MarginBottomProps extends Props {
-  mb: string;
+  mb?: string;
 }
 
 export interface MarginLeftProps extends Props {
-  ml: string;
+  ml?: string;
 }
 
 export interface MarginRightProps extends Props {
-  mr: string;
+  mr?: string;
 }
 
 export interface PaddingProps extends Props {
-  p: string;
+  p?: string;
 }
 
 export interface PaddingTopProps extends Props {
-  pt: string;
+  pt?: string;
 }
 
 export interface PaddingBottomProps extends Props {
-  pb: string;
+  pb?: string;
 }
 
 export interface PaddingLeftProps extends Props {
-  pl: string;
+  pl?: string;
 }
 
 export interface PaddingRightProps extends Props {
-  pr: string;
+  pr?: string;
 }
