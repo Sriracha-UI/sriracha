@@ -3,7 +3,7 @@
   "version": "1.9.5",
   "description": "A react style library build with styled-components, and material ui theme.",
   "main": "dist/index",
-  "types": "index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
