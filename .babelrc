@@ -1,6 +1,6 @@
 {
   "presets": [
-    "module:babel-plugin-styled-components",
+    // "module:babel-plugin-styled-components",
     "@babel/preset-env",
     "@babel/preset-react"
   ]
