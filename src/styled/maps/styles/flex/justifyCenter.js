@@ -1,6 +1,6 @@
 import styledMap from "styled-map";
 
-const justifyCenter: (props: any) => string = styledMap`
+export default styledMap`
   jce: flex-end;
   jcs: flex-start;
   jcb: space-between;
@@ -8,5 +8,3 @@ const justifyCenter: (props: any) => string = styledMap`
   jcv: space-evenly;
   default: center;
 `;
-
-export default justifyCenter;
