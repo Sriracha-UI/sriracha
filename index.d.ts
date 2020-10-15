@@ -4,9 +4,7 @@ import { theme } from "./src/styled/theme";
 
 declare module "styled-components" {
   type Theme = typeof theme;
-  export interface DefaultTheme extends Theme {
-    pr: any;
-  }
+  export interface DefaultTheme extends Theme {}
   export interface ThemeProps<T> {
     theme: T;
     p?: string | number;
@@ -26,5 +24,61 @@ declare module "styled-components" {
     minH?: string | number;
     maxH?: string | number;
     sqr?: string | number;
+    color?: string;
+    activeBg?: string;
+    bg?: string;
+    radius?: string;
+    border?: string;
+    bs?: string;
+    bw?: string;
+    bc?: string;
+    opacity?: string;
+    shadow?: string;
+    hvrShadow?: string;
+    hvrColor?: string;
+    hvrBg?: string;
+    hvrBorder?: string;
+    hvrBs?: string;
+    hvrBw?: string;
+    hvrBc?: string;
+    ttM?: string;
+    ttP?: string;
+    ttW?: string;
+    ttH?: string;
+    ttRadius?: string;
+    zIndex?: string;
+    fcsColor?: string;
+    fcsBg?: string;
+    fcsBorder?: string;
+    fcsBs?: string;
+    fcsBw?: string;
+    fcsBc?: string;
+    fcsShadow?: string;
+    bgSrc?: string;
+    bgPosition?: string;
+    bgRepeat?: string;
+    bgAttachment?: string;
+    bgSize?: string;
+    font?: string;
+    size?: string;
+    weight?: string;
+    decoration?: string;
+    textAlign?: string;
+    wrap?: string;
+    direction?: string;
+    justify?: string;
+    align?: string;
+    content?: string;
+    position?: string;
+    top?: string;
+    right?: string;
+    bottom?: string;
+    left?: string;
+    overflow?: string;
+    clip?: string;
+    translate?: string;
+    translateX?: string;
+    translateY?: string;
+    obg?: string;
   }
 }

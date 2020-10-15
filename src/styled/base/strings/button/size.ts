@@ -1,26 +1,8 @@
 import { css } from "styled-components";
 import { sideways, btnMarg, btnPad } from "../../../maps";
-import {
-  HeightProps,
-  WidthProps,
-  MaxHeightProps,
-  MaxWidthProps,
-  MinHeightProps,
-  MinWidthProps,
-  MarginProps,
-  MarginTopProps,
-  MarginBottomProps,
-  MarginLeftProps,
-  MarginRightProps,
-  PaddingProps,
-  PaddingTopProps,
-  PaddingBottomProps,
-  PaddingLeftProps,
-  PaddingRightProps,
-} from "../../../../types";
 
 export default css`
-  height: ${(props: HeightProps) =>
+  height: ${(props) =>
     !props.h && !props.sqr
       ? "auto"
       : props.theme.space[props.h]
@@ -30,7 +12,7 @@ export default css`
       : props.sqr
       ? props.sqr
       : props.h};
-  width: ${(props: WidthProps) =>
+  width: ${(props) =>
     !props.w && !props.sqr
       ? sideways
       : props.theme.space[props.w]
@@ -40,85 +22,85 @@ export default css`
       : props.sqr
       ? props.sqr
       : props.w};
-  max-height: ${(props: MaxHeightProps) =>
+  max-height: ${(props) =>
     !props.maxH
       ? "none"
       : props.theme.space[props.maxH]
       ? props.theme.space[props.maxH]
       : props.maxH};
-  max-width: ${(props: MaxWidthProps) =>
+  max-width: ${(props) =>
     !props.maxW
       ? "none"
       : props.theme.space[props.maxW]
       ? props.theme.space[props.maxW]
       : props.maxW};
-  min-height: ${(props: MinHeightProps) =>
+  min-height: ${(props) =>
     !props.minH
       ? "none"
       : props.theme.space[props.minH]
       ? props.theme.space[props.minH]
       : props.minH};
-  min-width: ${(props: MinWidthProps) =>
+  min-width: ${(props) =>
     !props.minW
       ? "none"
       : props.theme.space[props.minW]
       ? props.theme.space[props.minW]
       : props.minW};
-  margin: ${(props: MarginProps) =>
+  margin: ${(props) =>
     !props.m
       ? btnMarg
       : props.theme.space[props.m]
       ? props.theme.space[props.m]
       : props.m};
-  margin-top: ${(props: MarginTopProps) =>
+  margin-top: ${(props) =>
     !props.mt
       ? "none"
       : props.theme.space[props.mt]
       ? props.theme.space[props.mt]
       : props.mt};
-  margin-bottom: ${(props: MarginBottomProps) =>
+  margin-bottom: ${(props) =>
     !props.mb
       ? "none"
       : props.theme.space[props.mb]
       ? props.theme.space[props.mb]
       : props.mb};
-  margin-left: ${(props: MarginLeftProps) =>
+  margin-left: ${(props) =>
     !props.ml
       ? "none"
       : props.theme.space[props.ml]
       ? props.theme.space[props.ml]
       : props.ml};
-  margin-right: ${(props: MarginRightProps) =>
+  margin-right: ${(props) =>
     !props.mr
       ? "none"
       : props.theme.space[props.mr]
       ? props.theme.space[props.mr]
       : props.mr};
-  padding: ${(props: PaddingProps) =>
+  padding: ${(props) =>
     !props.p
       ? btnPad
       : props.theme.space[props.p]
       ? props.theme.space[props.p]
       : props.p};
-  padding-top: ${(props: PaddingTopProps) =>
+  padding-top: ${(props) =>
     !props.pt
       ? "none"
       : props.theme.space[props.pt]
       ? props.theme.space[props.pt]
       : props.pt};
-  padding-bottom: ${(props: PaddingBottomProps) =>
+  padding-bottom: ${(props) =>
     !props.pb
       ? "none"
       : props.theme.space[props.pb]
       ? props.theme.space[props.pb]
       : props.pb};
-  padding-left: ${(props: PaddingLeftProps) =>
+  padding-left: ${(props) =>
     !props.pl
       ? "none"
       : props.theme.space[props.pl]
       ? props.theme.space[props.pl]
       : props.pl};
-  padding-right: ${(props: PaddingRightProps) =>
+  padding-right: ${(props) =>
     !props.pr
       ? "none"
       : props.theme.space[props.pr]

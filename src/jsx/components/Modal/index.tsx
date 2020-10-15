@@ -3,25 +3,6 @@ import ReactDOM from "react-dom";
 import styled from "styled-components";
 import { Box, theme } from "../../../index";
 import { centerAlign, justifyCenter } from "../../../styled/maps";
-import {
-  AlignItemProps,
-  BottomProps,
-  JustifyContentProps,
-  LeftProps,
-  Props,
-  RightProps,
-  TopProps,
-} from "../../../types";
-
-interface TransformProps {
-  translate?: string;
-  translateX?: string;
-  translateY?: string;
-}
-
-interface OverlayBackgroundProps extends Props {
-  obg?: string;
-}
 
 interface ModalProps {
   active: boolean;
@@ -59,7 +40,7 @@ const ModalWrapper = styled.div`
     width: 100%;
     height: 100%;
     border-radius: 0;
-    background: ${(props: OverlayBackgroundProps) =>
+    background: ${(props) =>
       !props.obg
         ? theme.colors.blackAlpha8
         : props.theme.colors[props.obg]
@@ -69,10 +50,9 @@ const ModalWrapper = styled.div`
 
   .container {
     display: flex;
-    justify-content: ${(props: JustifyContentProps) =>
+    justify-content: ${(props) =>
       props.justify ? props.justify : justifyCenter};
-    align-items: ${(props: AlignItemProps) =>
-      props.align ? props.align : centerAlign};
+    align-items: ${(props) => (props.align ? props.align : centerAlign)};
     position: fixed;
     top: 0;
     left: 0;
@@ -87,11 +67,11 @@ const ModalWrapper = styled.div`
   .modal {
     z-index: 2000;
     position: absolute;
-    top: ${(props: TopProps) => (props.top ? props.top : "50%")};
-    right: ${(props: RightProps) => (props.right ? props.right : "auto")};
-    bottom: ${(props: BottomProps) => (props.bottom ? props.bottom : "auto")};
-    left: ${(props: LeftProps) => (props.left ? props.left : "50%")};
-    transform: ${(props: TransformProps) =>
+    top: ${(props) => (props.top ? props.top : "50%")};
+    right: ${(props) => (props.right ? props.right : "auto")};
+    bottom: ${(props) => (props.bottom ? props.bottom : "auto")};
+    left: ${(props) => (props.left ? props.left : "50%")};
+    transform: ${(props) =>
       props.translate
         ? `translate(${props.translate})`
         : props.translateX

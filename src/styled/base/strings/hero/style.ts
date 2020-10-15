@@ -1,4 +1,3 @@
-import { HvrBsProps, HvrBcProps } from "./../../../../types/index";
 import { css } from "styled-components";
 import {
   cursorStyle,
