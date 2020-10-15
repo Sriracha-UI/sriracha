@@ -1,8 +1,7 @@
 import { Props } from "./../../types";
 import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyles = createGlobalStyle`
-  /* @import url("https://fonts.googleapis.com/css?family=Space+Mono|Bellota|Ubuntu+Mono|Open+Sans|Ubuntu&display=swap"); */
+export const GlobalStyles = createGlobalStyle` 
   *,
   *::after,
   *::before {
@@ -490,7 +489,7 @@ export const GlobalStyles = createGlobalStyle`
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     line-height: 1.5;
-    color: ${(props) => props.theme.gray9};
+    color: ${(props: Props) => props.theme.colors.gray9};
     font-family: inherit;
     font-size: 16px;
     line-height: 1.5;
@@ -567,7 +566,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .markdown-body a {
-    color: ${(props) => props.theme.lightBlue5};
+    color: ${(props: Props) => props.theme.lightBlue5};
     text-decoration: none;
   }
 
@@ -585,7 +584,7 @@ export const GlobalStyles = createGlobalStyle`
     overflow: hidden;
     background: transparent;
     border: 0;
-    border-bottom: ${(props) => `1px solid ${props.theme.colors.gray5}`};
+    border-bottom: ${(props: Props) => `1px solid ${props.theme.colors.gray5}`};
   }
 
   .markdown-body hr:after,
@@ -620,7 +619,7 @@ export const GlobalStyles = createGlobalStyle`
     color: #444d56;
     vertical-align: middle;
     background-color: #fafbfc;
-    border: ${(props) => `1px solid ${props.theme.colors.gray5}`};
+    border: ${(props: Props) => `1px solid ${props.theme.colors.gray5}`};
     border-radius: 3px;
     box-shadow: inset 0 -1px 0 #d1d5da;
   }
@@ -735,7 +734,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .markdown-body .border {
-    border: ${(props) => `1px solid ${props.theme.colors.gray5}`} !important;
+    border: ${(props: Props) =>
+      `1px solid ${props.theme.colors.gray5}`} !important;
   }
 
   .markdown-body .border-0 {
@@ -743,7 +743,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .markdown-body .border-bottom {
-    border-bottom: ${(props) =>
+    border-bottom: ${(props: Props) =>
       `1px solid ${props.theme.colors.gray5}`} !important;
   }
 
@@ -1037,7 +1037,7 @@ export const GlobalStyles = createGlobalStyle`
     color: #444d56;
     vertical-align: middle;
     background-color: #fafbfc;
-    border: ${(props) => `1px solid ${props.theme.colors.gray5}`};
+    border: ${(props: Props) => `1px solid ${props.theme.colors.gray5}`};
     border-radius: 3px;
     box-shadow: inset 0 -1px 0 #d1d5da;
   }
@@ -1118,7 +1118,7 @@ export const GlobalStyles = createGlobalStyle`
   .markdown-body h1,
   .markdown-body h2 {
     padding-bottom: 0.3em;
-    border-bottom: ${(props) => `1px solid ${props.theme.colors.gray5}`};
+    border-bottom: ${(props: Props) => `1px solid ${props.theme.colors.gray5}`};
   }
 
   .markdown-body h2 {
@@ -1228,7 +1228,7 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 1.4rem;
     font-family: "Space Mono", monospace;
     /* background-color: rgba(27, 31, 35, 0.05); */
-    background: ${(props) => props.theme.colors.gray3};
+    background: ${(props: Props) => props.theme.colors.gray3};
     border-radius: 3px;
   }
 
