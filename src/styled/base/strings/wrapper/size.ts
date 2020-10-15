@@ -1,7 +1,14 @@
-import { css } from "styled-components";
+import {
+  css,
+  FlattenInterpolation,
+  ThemeProps,
+  DefaultTheme,
+} from "styled-components";
 import { sideways, marg, pad } from "../../../maps";
 
-export const wrapperSizeBase = css`
+export const wrapperSizeBase: FlattenInterpolation<ThemeProps<
+  DefaultTheme
+>> = css`
   height: ${(props) =>
     !props.h
       ? "auto"
