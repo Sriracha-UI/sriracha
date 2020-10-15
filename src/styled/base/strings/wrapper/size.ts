@@ -10,99 +10,99 @@ export const wrapperSizeBase: FlattenInterpolation<ThemeProps<
   DefaultTheme
 >> = css`
   height: ${(props) =>
-    !props.h
+    !props?.h
       ? "auto"
-      : props.theme.space[props.h]
-      ? props.theme.space[props.h]
-      : props.h};
+      : props?.theme.space[props?.h]
+      ? props?.theme.space[props?.h]
+      : props?.h};
   width: ${(props) =>
-    !props.w
+    !props?.w
       ? sideways
-      : props.theme.space[props.w]
-      ? props.theme.space[props.w]
-      : props.w};
+      : props?.theme.space[props?.w]
+      ? props?.theme.space[props?.w]
+      : props?.w};
   max-height: ${(props) =>
-    !props.maxH
+    !props?.maxH
       ? "none"
-      : props.theme.space[props.maxH]
-      ? props.theme.space[props.maxH]
-      : props.maxH};
+      : props?.theme.space[props?.maxH]
+      ? props?.theme.space[props?.maxH]
+      : props?.maxH};
   max-width: ${(props) =>
-    !props.maxW
+    !props?.maxW
       ? "100vw"
-      : props.theme.space[props.maxW]
-      ? props.theme.space[props.maxW]
-      : props.maxW};
+      : props?.theme.space[props?.maxW]
+      ? props?.theme.space[props?.maxW]
+      : props?.maxW};
   min-height: ${(props) =>
-    !props.minH
+    !props?.minH
       ? "100vh"
-      : props.theme.space[props.minH]
-      ? props.theme.space[props.minH]
-      : props.minH};
+      : props?.theme.space[props?.minH]
+      ? props?.theme.space[props?.minH]
+      : props?.minH};
   min-width: ${(props) =>
-    !props.minW
+    !props?.minW
       ? "none"
-      : props.theme.space[props.minW]
-      ? props.theme.space[props.minW]
-      : props.minW};
+      : props?.theme.space[props?.minW]
+      ? props?.theme.space[props?.minW]
+      : props?.minW};
   margin: ${(props) =>
-    !props.m
+    !props?.m
       ? marg
-      : props.theme.space[props.m]
-      ? props.theme.space[props.m]
-      : props.m};
+      : props?.theme.space[props?.m]
+      ? props?.theme.space[props?.m]
+      : props?.m};
   margin-top: ${(props) =>
-    !props.mt
+    !props?.mt
       ? "none"
-      : props.theme.space[props.mt]
-      ? props.theme.space[props.mt]
-      : props.mt};
+      : props?.theme.space[props?.mt]
+      ? props?.theme.space[props?.mt]
+      : props?.mt};
   margin-bottom: ${(props) =>
-    !props.mb
+    !props?.mb
       ? "none"
-      : props.theme.space[props.mb]
-      ? props.theme.space[props.mb]
-      : props.mb};
+      : props?.theme.space[props?.mb]
+      ? props?.theme.space[props?.mb]
+      : props?.mb};
   margin-left: ${(props) =>
-    !props.ml
+    !props?.ml
       ? "none"
-      : props.theme.space[props.ml]
-      ? props.theme.space[props.ml]
-      : props.ml};
+      : props?.theme.space[props?.ml]
+      ? props?.theme.space[props?.ml]
+      : props?.ml};
   margin-right: ${(props) =>
-    !props.mr
+    !props?.mr
       ? "none"
-      : props.theme.space[props.mr]
-      ? props.theme.space[props.mr]
-      : props.mr};
+      : props?.theme.space[props?.mr]
+      ? props?.theme.space[props?.mr]
+      : props?.mr};
   padding: ${(props) =>
-    !props.p
+    !props?.p
       ? pad
-      : props.theme.space[props.p]
-      ? props.theme.space[props.p]
-      : props.p};
+      : props?.theme.space[props?.p]
+      ? props?.theme.space[props?.p]
+      : props?.p};
   padding-top: ${(props) =>
-    !props.pt
+    !props?.pt
       ? "none"
-      : props.theme.space[props.pt]
-      ? props.theme.space[props.pt]
-      : props.pt};
+      : props?.theme.space[props?.pt]
+      ? props?.theme.space[props?.pt]
+      : props?.pt};
   padding-bottom: ${(props) =>
-    !props.pb
+    !props?.pb
       ? "none"
-      : props.theme.space[props.pb]
-      ? props.theme.space[props.pb]
-      : props.pb};
+      : props?.theme.space[props?.pb]
+      ? props?.theme.space[props?.pb]
+      : props?.pb};
   padding-left: ${(props) =>
-    !props.pl
+    !props?.pl
       ? "none"
-      : props.theme.space[props.pl]
-      ? props.theme.space[props.pl]
-      : props.pl};
+      : props?.theme.space[props?.pl]
+      ? props?.theme.space[props?.pl]
+      : props?.pl};
   padding-right: ${(props) =>
-    !props.pr
+    !props?.pr
       ? "none"
-      : props.theme.space[props.pr]
-      ? props.theme.space[props.pr]
-      : props.pr};
+      : props?.theme.space[props?.pr]
+      ? props?.theme.space[props?.pr]
+      : props?.pr};
 `;
