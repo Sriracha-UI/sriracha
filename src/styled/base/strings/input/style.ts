@@ -1,58 +1,33 @@
 import { css } from "styled-components";
 import { cursorStyle, boxShadow, hoverShadow } from "../../../maps";
-import {
-  ColorProps,
-  BackgroundProps,
-  BorderProps,
-  BorderStyleProps,
-  BorderWidthProps,
-  BorderRadiusProps,
-  BorderColorProps,
-  OpacityProps,
-  ShadowProps,
-  HvrColorProps,
-  HvrBgProps,
-  HvrBorderProps,
-  HvrBsProps,
-  HvrBwProps,
-  HvrBcProps,
-  HvrShadowProps,
-  FocusColorProps,
-  FocusBackgroundProps,
-  FocusBorderProps,
-  FocusBsProps,
-  FocusBwProps,
-  FocusBcProps,
-  FocusShadowProps,
-} from "./../../../../types";
 
 export default css`
-  color: ${(props: ColorProps) =>
+  color: ${(props) =>
     !props.color
       ? "auto"
       : props.theme.colors[props.color]
       ? props.theme.colors[props.color]
       : props.color};
-  background: ${(props: BackgroundProps) =>
+  background: ${(props) =>
     !props.bg
       ? "auto"
       : props.theme.colors[props.bg]
       ? props.theme.colors[props.bg]
       : props.bg};
-  border: ${(props: BorderProps) =>
+  border: ${(props) =>
     props.border ? props.border : `0.2rem inset ${props.theme.colors.gray6}`};
-  border-style: ${(props: BorderStyleProps) => (props.bs ? props.bs : "auto")};
-  border-width: ${(props: BorderWidthProps) => (props.bw ? props.bw : "auto")};
-  border-radius: ${(props: BorderRadiusProps) =>
+  border-style: ${(props) => (props.bs ? props.bs : "auto")};
+  border-width: ${(props) => (props.bw ? props.bw : "auto")};
+  border-radius: ${(props) =>
     props.radius ? props.radius : props.theme.borderRadius};
-  border-color: ${(props: BorderColorProps) =>
+  border-color: ${(props) =>
     props.theme.colors[props.bc]
       ? props.theme.colors[props.bc]
       : props.bc
       ? props.bc
       : "auto"};
-  opacity: ${(props: OpacityProps) => (props.opacity ? props.opacity : "none")};
-  box-shadow: ${(props: ShadowProps) =>
+  opacity: ${(props) => (props.opacity ? props.opacity : "none")};
+  box-shadow: ${(props) =>
     props.theme.shadows[props.shadow]
       ? props.theme.shadows[props.shadow]
       : props.shadow
@@ -62,29 +37,29 @@ export default css`
   transition: color 0.5s, background 0.5s, box-shadow 0.5s;
 
   &:hover {
-    color: ${(props: HvrColorProps) =>
+    color: ${(props) =>
       !props.hvrColor
         ? "auto"
         : props.theme.colors[props.hvrColor]
         ? props.theme.colors[props.hvrColor]
         : props.hvrColor};
-    background: ${(props: HvrBgProps) =>
+    background: ${(props) =>
       !props.hvrBg
         ? "auto"
         : props.theme.colors[props.hvrBg]
         ? props.theme.colors[props.hvrBg]
         : props.hvrBg};
-    border: ${(props: HvrBorderProps) =>
+    border: ${(props) =>
       props.hvrBorder
         ? props.hvrBorder
         : props.border
         ? props.border
         : `0.2rem solid ${props.theme.colors.gray3}`};
-    border-style: ${(props: HvrBsProps) =>
+    border-style: ${(props) =>
       props.hvrBs ? props.hvrBs : props.bs ? props.bs : "auto"};
-    border-width: ${(props: HvrBwProps) =>
+    border-width: ${(props) =>
       props.hvrBw ? props.hvrBw : props.bw ? props.bw : "auto"};
-    border-color: ${(props: HvrBcProps) =>
+    border-color: ${(props) =>
       props.theme.colors[props.hvrBc]
         ? props.theme.colors[props.hvrBc]
         : props.hvrBc
@@ -94,7 +69,7 @@ export default css`
         : props.bc
         ? props.bc
         : "auto"};
-    box-shadow: ${(props: HvrShadowProps) =>
+    box-shadow: ${(props) =>
       props.theme.shadows[props.hvrShadow]
         ? props.theme.shadows[props.hvrShadow]
         : props.hvrShadow
@@ -104,29 +79,29 @@ export default css`
   }
 
   &:focus {
-    color: ${(props: FocusColorProps) =>
+    color: ${(props) =>
       !props.fcsColor
         ? "auto"
         : props.theme.colors[props.fcsColor]
         ? props.theme.colors[props.fcsColor]
         : props.fcsColor};
-    background: ${(props: FocusBackgroundProps) =>
+    background: ${(props) =>
       !props.fcsBg
         ? "auto"
         : props.theme.colors[props.fcsBg]
         ? props.theme.colors[props.fcsBg]
         : props.fcsBg};
-    border: ${(props: FocusBorderProps) =>
+    border: ${(props) =>
       props.fcsBorder
         ? props.fcsBorder
         : props.hvrBorder
         ? props.hvrBorder
         : `0.2rem solid ${props.theme.colors.gray3}`};
-    border-style: ${(props: FocusBsProps) =>
+    border-style: ${(props) =>
       props.fcsBs ? props.fcsBs : props.hvrBs ? props.hvrBs : "auto"};
-    border-width: ${(props: FocusBwProps) =>
+    border-width: ${(props) =>
       props.fcsBw ? props.fcsBw : props.hvrBw ? props.hvrBw : "auto"};
-    border-color: ${(props: FocusBcProps) =>
+    border-color: ${(props) =>
       props.theme.colors[props.fcsBc]
         ? props.theme.colors[props.fcsBc]
         : props.fcsBc
@@ -136,7 +111,7 @@ export default css`
         : props.hvrBc
         ? props.hvrBc
         : "auto"};
-    box-shadow: ${(props: FocusShadowProps) =>
+    box-shadow: ${(props) =>
       props.theme.shadows[props.fcsShadow]
         ? props.theme.shadows[props.fcsShadow]
         : props.fcsShadow
