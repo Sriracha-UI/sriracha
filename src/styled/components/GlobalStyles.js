@@ -1,4 +1,3 @@
-import { Props } from "./../../types";
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle` 
@@ -67,11 +66,11 @@ export const GlobalStyles = createGlobalStyle`
 
   html body a {
     text-decoration: none;
-    color: ${({ theme }: Props) => theme.colors.blue6};
+    color: ${({ theme }) => theme.colors.blue6};
   }
 
   html body a:hover {
-    color: ${({ theme }: Props) => theme.colors.blue7};
+    color: ${({ theme }) => theme.colors.blue7};
   }
 
   .hidden {
@@ -79,7 +78,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   html body img {
-    border-radius: ${(props: Props) => props.theme.borderRadius};
+    border-radius: ${(props) => props.theme.borderRadius};
   }
 
   /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -489,7 +488,7 @@ export const GlobalStyles = createGlobalStyle`
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     line-height: 1.5;
-    color: ${(props: Props) => props.theme.colors.gray9};
+    color: ${(props) => props.theme.colors.gray9};
     font-family: inherit;
     font-size: 16px;
     line-height: 1.5;
@@ -566,7 +565,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .markdown-body a {
-    color: ${(props: Props) => props.theme.colors.lightBlue5};
+    color: ${(props) => props.theme.colors.lightBlue5};
     text-decoration: none;
   }
 
@@ -584,7 +583,7 @@ export const GlobalStyles = createGlobalStyle`
     overflow: hidden;
     background: transparent;
     border: 0;
-    border-bottom: ${(props: Props) => `1px solid ${props.theme.colors.gray5}`};
+    border-bottom: ${(props) => `1px solid ${props.theme.colors.gray5}`};
   }
 
   .markdown-body hr:after,
@@ -619,7 +618,7 @@ export const GlobalStyles = createGlobalStyle`
     color: #444d56;
     vertical-align: middle;
     background-color: #fafbfc;
-    border: ${(props: Props) => `1px solid ${props.theme.colors.gray5}`};
+    border: ${(props) => `1px solid ${props.theme.colors.gray5}`};
     border-radius: 3px;
     box-shadow: inset 0 -1px 0 #d1d5da;
   }
@@ -734,8 +733,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .markdown-body .border {
-    border: ${(props: Props) =>
-      `1px solid ${props.theme.colors.gray5}`} !important;
+    border: ${(props) => `1px solid ${props.theme.colors.gray5}`} !important;
   }
 
   .markdown-body .border-0 {
@@ -743,7 +741,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .markdown-body .border-bottom {
-    border-bottom: ${(props: Props) =>
+    border-bottom: ${(props) =>
       `1px solid ${props.theme.colors.gray5}`} !important;
   }
 
@@ -1037,7 +1035,7 @@ export const GlobalStyles = createGlobalStyle`
     color: #444d56;
     vertical-align: middle;
     background-color: #fafbfc;
-    border: ${(props: Props) => `1px solid ${props.theme.colors.gray5}`};
+    border: ${(props) => `1px solid ${props.theme.colors.gray5}`};
     border-radius: 3px;
     box-shadow: inset 0 -1px 0 #d1d5da;
   }
@@ -1118,7 +1116,7 @@ export const GlobalStyles = createGlobalStyle`
   .markdown-body h1,
   .markdown-body h2 {
     padding-bottom: 0.3em;
-    border-bottom: ${(props: Props) => `1px solid ${props.theme.colors.gray5}`};
+    border-bottom: ${(props) => `1px solid ${props.theme.colors.gray5}`};
   }
 
   .markdown-body h2 {
@@ -1228,7 +1226,7 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 1.4rem;
     font-family: "Space Mono", monospace;
     /* background-color: rgba(27, 31, 35, 0.05); */
-    background: ${(props: Props) => props.theme.colors.gray3};
+    background: ${(props) => props.theme.colors.gray3};
     border-radius: 3px;
   }
 
