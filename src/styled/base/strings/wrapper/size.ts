@@ -1,7 +1,7 @@
 import { css } from "styled-components";
 import { sideways, marg, pad } from "../../../maps";
 
-export default css`
+export const wrapperSizeBase = css`
   height: ${(props) =>
     !props.h
       ? "auto"
