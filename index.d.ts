@@ -1,4 +1,4 @@
-declare module "styled-map";
+// declare module "styled-map";
 import "styled-components";
 import { theme } from "./src/styled/theme";
 
