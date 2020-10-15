@@ -1,6 +1,8 @@
 // theme variables are set here
 export const theme = {
   colors: {
+    background: "#EEEEEE",
+
     gray0: "#FAFAFA",
     gray1: "#F5F5F5",
     gray2: "#EEEEEE",

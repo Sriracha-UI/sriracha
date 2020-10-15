@@ -1,4 +1,4 @@
-import styledMap from "../../../../types/styled-map";
+import styledMap from "styled-map";
 
 export default styledMap`
   xsp?: 1rem;
