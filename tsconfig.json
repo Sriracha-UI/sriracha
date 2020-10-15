@@ -10,5 +10,6 @@
     "moduleResolution": "Node",
     "strictNullChecks": false,
     "strict": false,
+    "declaration": true
   }
 }
