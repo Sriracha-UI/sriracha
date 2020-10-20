@@ -3,7 +3,7 @@ import AppWrapper from "../../../styled/components/AppWrapper";
 import { ThemeProvider } from "styled-components";
 import { lightColors, nickNacks } from "./theme";
 import { GlobalStyles } from "../../../styled/components/GlobalStyles";
-import ThemeModeProvider from "./ThemeModeContext";
+import ThemeModeProvider from "../ThemeModeContext";
 
 export default function AppContainer({ children, ...rest }) {
   const theme = {

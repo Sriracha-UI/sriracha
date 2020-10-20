@@ -3,7 +3,7 @@ import AppWrapper from "../../../styled/components/AppWrapper";
 import { ThemeProvider } from "styled-components";
 import { lightColors, darkColors, nickNacks } from "./theme";
 import { GlobalStyles } from "../../../styled/components/GlobalStyles";
-import ThemeModeProvider from "./ThemeModeContext";
+import ThemeModeProvider from "../ThemeModeContext";
 
 export default function ColorModeWrapper({
   themeString,
