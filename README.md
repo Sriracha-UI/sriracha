@@ -8,11 +8,13 @@ Sriracha UI is a design system built with accessability as the highest priority.
 
 To install Sriracha UI to your project simply run `yarn add sriracha-ui` || `npm i sriracha-ui` and you're ready to hook it up!
 
-### CSS overhaul and AppWrapper
+Add `import "sriracha-ui/css/main.css";` to the top of your src/index.js.
 
-Sriracha UI comes with a css file you can import that includes a nice subtle style overhaul and a normalize. Just add `import "sriracha-ui/css/main.css";` to the top of your src/index.js!
+> Note: This import includes a subtle style overhaul and a normalize.
 
-AppWrapper is a powerful component that lets you set the background and fonts of your application.
+### Initial Setup with AppContainer
+
+AppContainer is a powerful component that lets you set the background and fonts of your application.
 
 Example:
 
@@ -20,14 +22,14 @@ Example:
 // src/App.js
 export default function App() {
   return (
-    <AppWrapper
+    <AppContainer
       bgSrc={/* This prop lets you easily set a responsive image as your background */}
       bg={/* Lets you set the background color of the app */}
       headFont={/* Lets you change the font of all the headers in the app */}
       font={/* Lets you can the font of everything else in the app */}
     >
       <Route path="/" exact component={Dashboard} />
-    </AppWrapper>
+    </AppContainer>
   );
 }
 ```
@@ -38,7 +40,7 @@ Sriracha UI comes with some unique style props and maps that make laying out and
 
 Style props need to be given a value and the associated
 
-These are the props you will probably use most often. I'll break them down into catagories.
+These are the props you will probably use most often. I'll break them down into categories.
 
 #### Flex-box
 
