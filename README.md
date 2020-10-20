@@ -175,9 +175,9 @@ Example:
 | background-attach | attachInitial | initial                              |
 | background-attach | attachScroll  | scroll                               |
 
-### AppWrapper
+### AppContainer
 
-AppWrapper is a div that is meant to wrap your app page, where you hold your routes. It's purpose is to easily change the font and background of the whole application.
+AppContainer is a div that is meant to wrap your app page, where you hold your routes. It's purpose is to easily change the font and background of the whole application.
 
 ### Wrapper
 
