@@ -8,7 +8,7 @@ import { useDarkMode } from "./jsx/hooks/useDarkMode";
 import { useTheme } from "./jsx/hooks/useTheme";
 
 // jsx components
-import ColorModeWrapper from "./jsx/components/ColorModeWrapper";
+import ColorModeContainer from "./jsx/components/ColorModeContainer";
 import AppContainer from "./jsx/components/AppContainer";
 import ToggleTheme from "./jsx/components/ToggleTheme";
 import Cabinet from "./jsx/components/Cabinet";
@@ -37,7 +37,7 @@ export {
   Cabinet,
   ServerStyleSheet,
   AppContainer,
-  ColorModeWrapper,
+  ColorModeContainer,
   ToggleTheme,
   styled,
   css,
