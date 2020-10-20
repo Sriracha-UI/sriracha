@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ThemeModeContext = React.createContext(null);
+export const ThemeModeContext = React.createContext([{}, () => {}]);
 
 export default function ThemeModeProvider({ theme, children }) {
   return (
