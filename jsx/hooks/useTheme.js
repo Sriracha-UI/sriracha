@@ -1,10 +1,13 @@
 import { useContext } from "react";
-import { ThemeModeContext } from "../components/ColorModeContainer/ThemeModeContext";
+import { ThemeModeContext } from "../components/AppContainer/ThemeModeContext";
 
 export const useTheme = () => {
-  const { toggleTheme, theme, themeString, lightTheme, darkTheme } = useContext(
-    ThemeModeContext
-  );
+  // const { toggleTheme, theme, themeString, lightTheme, darkTheme } = useContext(
+  //   ThemeModeContext
+  // );
 
-  return { toggleTheme, theme, themeString, lightTheme, darkTheme };
+  // return { toggleTheme, theme, themeString, lightTheme, darkTheme };
+  const { theme } = useContext(ThemeModeContext);
+
+  return { theme };
 };
