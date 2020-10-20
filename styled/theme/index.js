@@ -1,5 +1,5 @@
 // theme variables are set here
-export const theme = {
+export const defaultTheme = {
   colors: {
     gray0: "#FAFAFA",
     gray1: "#F5F5F5",

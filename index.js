@@ -1,5 +1,5 @@
 // export theme stuff
-export { theme } from "./styled/theme";
+export { defaultTheme } from "./styled/theme";
 
 // export hooks
 import { useModal } from "./jsx/hooks/useModal";
