@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import styled from "styled-components";
-import { Box, theme } from "../../../index";
+import { Box, defaultTheme } from "../../../index";
 import { centerAlign, justifyCenter } from "../../../styled/maps";
 
 const Modal = ({ active, toggle, children, ...rest }) =>
@@ -35,7 +35,7 @@ const ModalWrapper = styled.div`
     border-radius: 0;
     background: ${(props) =>
       !props.obg
-        ? theme.colors.blackAlpha8
+        ? defaultTheme.colors.blackAlpha8
         : props.theme.colors[props.obg]
         ? props.theme.colors[props.obg]
         : props.obg};
