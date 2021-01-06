@@ -33,7 +33,7 @@
   "homepage": "https://github.com/Sriracha-UI/sriracha#readme",
   "dependencies": {
     "@callstack/react-theme-provider": "^2.1.0",
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "highlight.js": "^10.2.0",
     "markdown-to-jsx": "^7.0.0",
     "styled-components": "^5.0.1",
